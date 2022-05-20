@@ -1,0 +1,10 @@
+.top-nav {
+  background-color: #e3a51e;
+  height: 49.8px; }
+  .top-nav .top-nav-all {
+    display: flex;
+    justify-content: space-around; }
+    .top-nav .top-nav-all .top-nav__right > ul {
+      display: flex;
+      justify-content: center;
+      align-items: center; }

@@ -1,0 +1,15 @@
+@import "sections/header.scss";
+@import "sections/Blogs.scss";
+@import "sections/Blog-single.scss";
+@import "sections/Card.scss";
+@import "sections/Contact-us.scss";
+@import "sections/footer.scss";
+@import "sections/home.scss";
+@import "sections/Product-single.scss";
+@import "sections/Products.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}

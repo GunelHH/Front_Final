@@ -1,0 +1,15 @@
+@import "../utils/colors.scss";
+@import "../utils/mixins";
+.top-nav {
+  background-color: #e3a51e;
+  height: 49.8px;
+  .top-nav-all {
+    display: flex;
+    justify-content: space-around;
+    .top-nav__right > ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
