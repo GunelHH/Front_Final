@@ -40,6 +40,10 @@
   }
 }
 
+@mixin transition {
+  transition: 0.2s ease-in all;
+}
+
 $breakpoints-up: (
   "medium": 768px,
   "large": 992px,

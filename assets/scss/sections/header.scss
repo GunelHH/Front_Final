@@ -1,15 +1,157 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
+.nav-cus {
+  height: 200px;
+}
 .top-nav {
-  background-color: #e3a51e;
-  height: 49.8px;
-  .top-nav-all {
-    display: flex;
-    justify-content: space-around;
-    .top-nav__right > ul {
+  height: 50px;
+  background-color: $main;
+  position: relative;
+  &-all {
+    height: 100%;
+    @include flex(center, space-between);
+    @include padding(10px, 70px, 0px, 70px);
+    font-size: 14px;
+    .top-nav__left {
+      color: $nav-text-color;
+    }
+    .top-nav__right .nav__right__elements {
+      @include flex();
+      > li {
+        @include padding(0, 20px, 0, 20px);
+        > a {
+          color: $nav-text-color;
+        }
+      }
+      .nav__right__currency {
+        border-right: 1px solid $nav-text-color;
+        & a i {
+          font-size: 12px;
+        }
+      }
+      .nav__right__language {
+        & a i {
+          font-size: 12px;
+        }
+      }
+      .nav__right__currency:hover .drop-down__currency {
+        display: block;
+        transform: translateX(0px);
+        transition: 2s linear all;
+      }
+      .nav__right__language:hover .drop-down__language {
+        transform: translateX(0px);
+        display: block;
+      }
+    }
+  }
+  .drop-down__currency {
+    width: 150px;
+    height: 100px;
+    background-color: $nav-text-color;
+    border: 1px solid $border;
+    position: absolute;
+    right: 280px;
+    top: 34px;
+    display: none;
+    transform: translateY(10px);
+    transition: 2s linear all;
+    z-index: 1;
+    & ul {
+      @include padding(15px, 15px, 20px, 15px);
+      > li {
+        @include padding(5px, 0px, 3px, 0px);
+        > a {
+          color: #666666;
+        }
+        > a:hover {
+          color: $main;
+          @include transition;
+        }
+      }
+    }
+  }
+
+  .drop-down__language {
+    width: 150px;
+    height: 100px;
+    background-color: $nav-text-color;
+    border: 1px solid $border;
+    position: absolute;
+    right: 150px;
+    top: 34px;
+    @include transition;
+    display: none;
+    transform: translateY(10px);
+    transition: 2s linear all;
+    z-index: 1;
+    & ul {
+      @include padding(15px, 15px, 20px, 15px);
+      > li {
+        @include padding(5px, 0px, 3px, 0px);
+        > a {
+          color: #666666;
+        }
+        > a:hover {
+          color: $main;
+          @include transition;
+        }
+      }
+    }
+  }
+}
+.main-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  @include padding(52px, 70px, 52px, 70px);
+  .main-nav__links {
+    ul {
+      font-weight: 500;
+      > li {
+        margin-right: 20px;
+        text-transform: uppercase;
+        & a {
+          color: $navlinks;
+          @include transition;
+        }
+      }
+      li:first-child a {
+        color: $main;
+      }
+      > li:hover a {
+        color: $main;
+      }
+    }
+  }
+  .main-nav__icons {
+    ul {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      li {
+        @include padding(0, 26px);
+        font-size: 24px;
+        & a {
+          color: $navlinks;
+        }
+        a:hover {
+          color: $main;
+          @include transition;
+        }
+      }
+      & li:last-child div {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        background-color: $main;
+        color: $nav-text-color;
+        top: 2px;
+        right: 20px;
+      }
     }
   }
 }
