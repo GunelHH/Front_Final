@@ -1,5 +1,4 @@
 .nav-cus {
-  height: 200px;
   position: relative; }
 
 .top-nav {
@@ -28,12 +27,13 @@
       .top-nav-all .top-nav__right .nav__right__elements .nav__right__language a i {
         font-size: 12px; }
       .top-nav-all .top-nav__right .nav__right__elements .nav__right__currency:hover .drop-down__currency {
-        display: block;
-        transform: translateX(0px);
-        transition: 2s linear all; }
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px); }
       .top-nav-all .top-nav__right .nav__right__elements .nav__right__language:hover .drop-down__language {
         transform: translateX(0px);
-        display: block; }
+        opacity: 1;
+        visibility: visible; }
   .top-nav .drop-down__currency {
     width: 150px;
     height: 100px;
@@ -42,10 +42,11 @@
     position: absolute;
     right: 280px;
     top: 34px;
-    display: none;
-    transform: translateY(10px);
-    transition: 2s linear all;
-    z-index: 1; }
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px);
+    transition: 0.2s ease-in all;
+    z-index: 122; }
     .top-nav .drop-down__currency ul {
       padding: 15px 15px 20px 15px; }
       .top-nav .drop-down__currency ul > li {
@@ -64,10 +65,11 @@
     right: 150px;
     top: 34px;
     transition: 0.2s ease-in all;
-    display: none;
-    transform: translateY(10px);
-    transition: 2s linear all;
-    z-index: 1; }
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px);
+    transition: 0.2s ease-in all;
+    z-index: 122; }
     .top-nav .drop-down__language ul {
       padding: 15px 15px 20px 15px; }
       .top-nav .drop-down__language ul > li {
@@ -107,16 +109,25 @@
     .main-nav__links ul:first-of-type > li:hover a#cu {
       color: #e3a51e; }
     .main-nav__links ul:first-of-type li#home:hover .drop-down__home {
-      display: block;
-      transition: 0.2s linear all; }
+      transform: translateY(0px);
+      opacity: 1;
+      transition: 0.2s linear all;
+      visibility: visible; }
     .main-nav__links ul:first-of-type li#pages:hover .drop-down__pages {
-      display: block; }
+      transform: translateY(0px);
+      opacity: 1;
+      transition: 0.2s linear all;
+      visibility: visible; }
     .main-nav__links ul:first-of-type li#shop:hover .drop-down__shop {
-      display: block; }
-    .main-nav__links ul:first-of-type li#shop:hover .drop-down__shop {
-      display: block; }
+      transform: translateY(0px);
+      opacity: 1;
+      transition: 0.2s linear all;
+      visibility: visible; }
     .main-nav__links ul:first-of-type li#blog:hover .drop-down__blog {
-      display: block; }
+      transform: translateY(0px);
+      opacity: 1;
+      transition: 0.2s linear all;
+      visibility: visible; }
   .main-nav .drop-down__home {
     width: 220px;
     height: 110px;
@@ -124,11 +135,12 @@
     border: 1px solid #e5e5e5;
     position: absolute;
     left: 454px;
-    top: 206px;
+    top: 100%;
     transition: 0.2s ease-in all;
-    z-index: 1;
-    transform: translateY(10px);
-    display: none; }
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden; }
     .main-nav .drop-down__home ul {
       padding: 15px 15px 20px 15px; }
       .main-nav .drop-down__home ul > li {
@@ -140,16 +152,18 @@
           color: #e3a51e;
           transition: 0.2s ease-in all; }
   .main-nav .drop-down__pages {
-    width: 1230px;
+    width: 1188px;
     height: 214px;
     background-color: white;
     border: 1px solid #e5e5e5;
     position: absolute;
     left: 108px;
-    top: 206px;
+    top: 100%;
     transition: 0.2s ease-in all;
-    z-index: 1;
-    display: none; }
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden; }
     .main-nav .drop-down__pages ul {
       padding: 15px 15px 20px 15px; }
       .main-nav .drop-down__pages ul > li {
@@ -196,11 +210,12 @@
         border: 1px solid #e5e5e5;
         position: absolute;
         left: 26%;
-        top: 70%;
+        top: 46px;
         transition: 0.2s ease-in all;
-        z-index: 1;
-        transform: translateY(10px);
-        display: none;
+        z-index: 122;
+        transform: translateY(14px);
+        opacity: 0;
+        visibility: hidden;
         font-size: 14px; }
         .main-nav .main-nav__icons ul > li#set .drop-down__icons ul,
         .main-nav .main-nav__icons ul li#search .drop-down__icons ul,
@@ -213,7 +228,10 @@
           .main-nav .main-nav__icons ul li#bag .drop-down__icons ul li {
             padding: 5px; }
     .main-nav .main-nav__icons ul li#set:hover .drop-down__icons {
-      display: block; }
+      transform: translateY(0px);
+      opacity: 1;
+      transition: 0.2s linear all;
+      visibility: visible; }
     .main-nav .main-nav__icons ul li:last-child div {
       width: 18px;
       height: 18px;
@@ -234,9 +252,10 @@
     left: 42%;
     top: 100%;
     transition: 0.2s ease-in all;
-    z-index: 1;
-    transform: translateY(10px);
-    display: none;
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden;
     font-size: 14px; }
     .main-nav .drop-down__shop ul {
       padding: 24px 15px 24px 15px; }
@@ -259,9 +278,10 @@
           left: 100%;
           top: 10%;
           transition: 0.2s ease-in all;
-          z-index: 1;
-          transform: translateY(10px);
-          display: none; }
+          z-index: 122;
+          transform: translateY(14px);
+          opacity: 0;
+          visibility: hidden; }
         .main-nav .drop-down__shop ul > li .drop-down__shop--shopList {
           width: 220px;
           height: 150px;
@@ -271,9 +291,10 @@
           left: 100%;
           top: 34%;
           transition: 0.2s ease-in all;
-          z-index: 1;
-          transform: translateY(10px);
-          display: none; }
+          z-index: 122;
+          transform: translateY(14px);
+          opacity: 0;
+          visibility: hidden; }
         .main-nav .drop-down__shop ul > li .drop-down__shop--productDetails {
           width: 250px;
           height: 178px;
@@ -283,15 +304,22 @@
           left: 100%;
           top: 54%;
           transition: 0.2s ease-in all;
-          z-index: 1;
-          transform: translateY(10px);
-          display: none; }
+          z-index: 122;
+          transform: translateY(14px);
+          opacity: 0;
+          visibility: hidden; }
     .main-nav .drop-down__shop ul > li#grid:hover .drop-down__shop--shopGrid {
-      display: block; }
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px); }
     .main-nav .drop-down__shop ul > li#list:hover .drop-down__shop--shopList {
-      display: block; }
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px); }
     .main-nav .drop-down__shop ul > li#product:hover .drop-down__shop--productDetails {
-      display: block; }
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px); }
   .main-nav .drop-down__blog {
     width: 220px;
     height: 250px;
@@ -301,9 +329,10 @@
     left: 48%;
     top: 100%;
     transition: 0.2s ease-in all;
-    z-index: 1;
-    transform: translateY(10px);
-    display: none;
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden;
     font-size: 14px; }
     .main-nav .drop-down__blog ul {
       padding: 20px 5px 20px 5px; }

@@ -1,7 +1,6 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
 .nav-cus {
-  height: 200px;
   position: relative;
 }
 .top-nav {
@@ -36,13 +35,14 @@
         }
       }
       .nav__right__currency:hover .drop-down__currency {
-        display: block;
+        opacity: 1;
+        visibility: visible;
         transform: translateX(0px);
-        transition: 2s linear all;
       }
       .nav__right__language:hover .drop-down__language {
         transform: translateX(0px);
-        display: block;
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -54,10 +54,11 @@
     position: absolute;
     right: 280px;
     top: 34px;
-    display: none;
-    transform: translateY(10px);
-    transition: 2s linear all;
-    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px);
+    @include transition;
+    z-index: 122;
     & ul {
       @include padding(15px, 15px, 20px, 15px);
       > li {
@@ -82,10 +83,11 @@
     right: 150px;
     top: 34px;
     @include transition;
-    display: none;
-    transform: translateY(10px);
-    transition: 2s linear all;
-    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px);
+    @include transition;
+    z-index: 122;
     & ul {
       @include padding(15px, 15px, 20px, 15px);
       > li {
@@ -139,20 +141,29 @@
         }
       }
       li#home:hover .drop-down__home {
-        display: block;
+        transform: translateY(0px);
+        opacity: 1;
         transition: 0.2s linear all;
+        visibility: visible;
       }
       li#pages:hover .drop-down__pages {
-        display: block;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 0.2s linear all;
+        visibility: visible;
       }
       li#shop:hover .drop-down__shop {
-        display: block;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 0.2s linear all;
+        visibility: visible;
       }
-      li#shop:hover .drop-down__shop {
-        display: block;
-      }
+
       li#blog:hover .drop-down__blog {
-        display: block;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 0.2s linear all;
+        visibility: visible;
       }
     }
   }
@@ -164,11 +175,12 @@
     border: 1px solid $border;
     position: absolute;
     left: 454px;
-    top: 206px;
+    top: 100%;
     @include transition;
-    z-index: 1;
-    transform: translateY(10px);
-    display: none;
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden;
     & ul {
       @include padding(15px, 15px, 20px, 15px);
       > li {
@@ -185,16 +197,18 @@
     }
   }
   .drop-down__pages {
-    width: 1230px;
+    width: 1188px;
     height: 214px;
     background-color: $nav-text-color;
     border: 1px solid $border;
     position: absolute;
     left: 108px;
-    top: 206px;
+    top: 100%;
     @include transition;
-    z-index: 1;
-    display: none;
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden;
     & ul {
       @include padding(15px, 15px, 20px, 15px);
       > li {
@@ -246,11 +260,12 @@
           border: 1px solid $border;
           position: absolute;
           left: 26%;
-          top: 70%;
+          top: 46px;
           @include transition;
-          z-index: 1;
-          transform: translateY(10px);
-          display: none;
+          z-index: 122;
+          transform: translateY(14px);
+          opacity: 0;
+          visibility: hidden;
           font-size: 14px;
           ul {
             width: 100%;
@@ -263,7 +278,10 @@
         }
       }
       li#set:hover .drop-down__icons {
-        display: block;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 0.2s linear all;
+        visibility: visible;
       }
       & li:last-child div {
         width: 18px;
@@ -288,9 +306,10 @@
     left: 42%;
     top: 100%;
     @include transition;
-    z-index: 1;
-    transform: translateY(10px);
-    display: none;
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden;
     font-size: 14px;
     & ul {
       @include padding(24px, 15px, 24px, 15px);
@@ -316,9 +335,10 @@
           left: 100%;
           top: 10%;
           @include transition;
-          z-index: 1;
-          transform: translateY(10px);
-          display: none;
+          z-index: 122;
+          transform: translateY(14px);
+          opacity: 0;
+          visibility: hidden;
         }
         .drop-down__shop--shopList {
           width: 220px;
@@ -329,9 +349,10 @@
           left: 100%;
           top: 34%;
           @include transition;
-          z-index: 1;
-          transform: translateY(10px);
-          display: none;
+          z-index: 122;
+          transform: translateY(14px);
+          opacity: 0;
+          visibility: hidden;
         }
         .drop-down__shop--productDetails {
           width: 250px;
@@ -342,20 +363,27 @@
           left: 100%;
           top: 54%;
           @include transition;
-          z-index: 1;
-          transform: translateY(10px);
-          display: none;
+          z-index: 122;
+          transform: translateY(14px);
+          opacity: 0;
+          visibility: hidden;
         }
       }
     }
     ul > li#grid:hover .drop-down__shop--shopGrid {
-      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
     }
     ul > li#list:hover .drop-down__shop--shopList {
-      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
     }
     ul > li#product:hover .drop-down__shop--productDetails {
-      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
     }
   }
   .drop-down__blog {
@@ -367,9 +395,10 @@
     left: 48%;
     top: 100%;
     @include transition;
-    z-index: 1;
-    transform: translateY(10px);
-    display: none;
+    z-index: 122;
+    transform: translateY(14px);
+    opacity: 0;
+    visibility: hidden;
     font-size: 14px;
     & ul {
       @include padding(20px, 5px, 20px, 5px);
