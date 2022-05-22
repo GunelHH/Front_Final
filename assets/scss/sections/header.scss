@@ -2,6 +2,7 @@
 @import "../utils/mixins";
 .nav-cus {
   height: 200px;
+  position: relative;
 }
 .top-nav {
   height: 50px;
@@ -90,7 +91,7 @@
       > li {
         @include padding(5px, 0px, 3px, 0px);
         > a {
-          color: #666666;
+          color: $a-color;
         }
         > a:hover {
           color: $main;
@@ -104,32 +105,130 @@
   display: flex;
   height: 100%;
   align-items: center;
-  @include padding(52px, 70px, 52px, 70px);
-  .main-nav__links {
-    ul {
+  @include padding(52px, 70px, 30px, 70px);
+  &__links {
+    ul:first-of-type {
       font-weight: 500;
-      > li {
+      li {
         margin-right: 20px;
-        text-transform: uppercase;
         & a {
           color: $navlinks;
           @include transition;
+          @include padding(80px, 0, 100px, 0px);
+          i {
+            font-size: 12px;
+          }
         }
       }
-      li:first-child a {
+      li a#hm {
         color: $main;
+        text-transform: uppercase;
       }
-      > li:hover a {
-        color: $main;
+      li a#pg,
+      a#bg,
+      a#cu,
+      a#sp {
+        text-transform: uppercase;
       }
+      > li:hover {
+        a#pg,
+        a#sp,
+        a#bg,
+        a#cu {
+          color: $main;
+        }
+      }
+      li#home:hover .drop-down__home {
+        display: block;
+        transition: 0.2s linear all;
+      }
+      li#pages:hover .drop-down__pages {
+        display: block;
+      }
+      li#shop:hover .drop-down__shop {
+        display: block;
+      }
+      li#shop:hover .drop-down__shop {
+        display: block;
+      }
+      li#blog:hover .drop-down__blog {
+        display: block;
+      }
+    }
+  }
+
+  .drop-down__home {
+    width: 220px;
+    height: 110px;
+    background-color: $nav-text-color;
+    border: 1px solid $border;
+    position: absolute;
+    left: 454px;
+    top: 206px;
+    @include transition;
+    z-index: 1;
+    transform: translateY(10px);
+    display: none;
+    & ul {
+      @include padding(15px, 15px, 20px, 15px);
+      > li {
+        @include padding(5px, 0px, 3px, 0px);
+        > a {
+          color: $a-color;
+          padding: unset;
+        }
+        > a:hover {
+          color: $main;
+          @include transition;
+        }
+      }
+    }
+  }
+  .drop-down__pages {
+    width: 1230px;
+    height: 214px;
+    background-color: $nav-text-color;
+    border: 1px solid $border;
+    position: absolute;
+    left: 108px;
+    top: 206px;
+    @include transition;
+    z-index: 1;
+    display: none;
+    & ul {
+      @include padding(15px, 15px, 20px, 15px);
+      > li {
+        @include padding(6px, 14px, 6px, 14px);
+        font-size: 14px;
+        > a {
+          color: $a-color;
+          padding: unset;
+        }
+        > a:hover {
+          color: $main;
+          @include transition;
+        }
+      }
+      & li:first-child {
+        font-size: 16px;
+        font-weight: 500;
+        > a {
+          color: $navlinks;
+        }
+      }
+    }
+    .cols:hover .title {
+      color: $main;
+      @include transition;
     }
   }
   .main-nav__icons {
     ul {
-      display: flex;
       justify-content: flex-end;
       position: relative;
-      li {
+      > li#set,
+      li#search,
+      li#bag {
         @include padding(0, 26px);
         font-size: 24px;
         & a {
@@ -139,6 +238,32 @@
           color: $main;
           @include transition;
         }
+
+        .drop-down__icons {
+          width: 150px;
+          height: 129px;
+          background-color: $nav-text-color;
+          border: 1px solid $border;
+          position: absolute;
+          left: 26%;
+          top: 70%;
+          @include transition;
+          z-index: 1;
+          transform: translateY(10px);
+          display: none;
+          font-size: 14px;
+          ul {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            li {
+              padding: 5px;
+            }
+          }
+        }
+      }
+      li#set:hover .drop-down__icons {
+        display: block;
       }
       & li:last-child div {
         width: 18px;
@@ -151,6 +276,113 @@
         color: $nav-text-color;
         top: 2px;
         right: 20px;
+      }
+    }
+  }
+  .drop-down__shop {
+    width: 220px;
+    height: 144px;
+    background-color: $nav-text-color;
+    border: 1px solid $border;
+    position: absolute;
+    left: 42%;
+    top: 100%;
+    @include transition;
+    z-index: 1;
+    transform: translateY(10px);
+    display: none;
+    font-size: 14px;
+    & ul {
+      @include padding(24px, 15px, 24px, 15px);
+      > li {
+        @include padding(5px, 0px, 3px, 0px);
+        > a {
+          color: $a-color;
+          padding: unset;
+          i {
+            font-size: 12px;
+          }
+        }
+        > a:hover {
+          color: $main;
+          @include transition;
+        }
+        .drop-down__shop--shopGrid {
+          width: 250px;
+          height: 178px;
+          background-color: $nav-text-color;
+          border: 1px solid $border;
+          position: absolute;
+          left: 100%;
+          top: 10%;
+          @include transition;
+          z-index: 1;
+          transform: translateY(10px);
+          display: none;
+        }
+        .drop-down__shop--shopList {
+          width: 220px;
+          height: 150px;
+          background-color: $nav-text-color;
+          border: 1px solid $border;
+          position: absolute;
+          left: 100%;
+          top: 34%;
+          @include transition;
+          z-index: 1;
+          transform: translateY(10px);
+          display: none;
+        }
+        .drop-down__shop--productDetails {
+          width: 250px;
+          height: 178px;
+          background-color: $nav-text-color;
+          border: 1px solid $border;
+          position: absolute;
+          left: 100%;
+          top: 54%;
+          @include transition;
+          z-index: 1;
+          transform: translateY(10px);
+          display: none;
+        }
+      }
+    }
+    ul > li#grid:hover .drop-down__shop--shopGrid {
+      display: block;
+    }
+    ul > li#list:hover .drop-down__shop--shopList {
+      display: block;
+    }
+    ul > li#product:hover .drop-down__shop--productDetails {
+      display: block;
+    }
+  }
+  .drop-down__blog {
+    width: 220px;
+    height: 250px;
+    background-color: $nav-text-color;
+    border: 1px solid $border;
+    position: absolute;
+    left: 48%;
+    top: 100%;
+    @include transition;
+    z-index: 1;
+    transform: translateY(10px);
+    display: none;
+    font-size: 14px;
+    & ul {
+      @include padding(20px, 5px, 20px, 5px);
+      > li {
+        @include padding(5px, 0px, 3px, 0px);
+        > a {
+          color: $a-color;
+          padding: unset;
+        }
+        > a:hover {
+          color: $main;
+          @include transition;
+        }
       }
     }
   }
