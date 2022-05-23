@@ -1,2 +1,66 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
+.top-footer {
+  background-color: $footer;
+  height: 374px;
+  &--bg {
+    padding: 74px 0;
+  }
+  &__content {
+    color: $navlinks;
+  }
+  &__title {
+    > h5 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  &__links {
+    line-height: 46px;
+    ul > li {
+      > a {
+        color: $navlinks;
+        @include transition;
+      }
+      > a:hover {
+        color: $main;
+        margin-left: 8px;
+      }
+    }
+  }
+  .footer-links {
+    line-height: 30px;
+    > li {
+      @include transition;
+      a {
+        color: $navlinks;
+      }
+    }
+    > li:hover {
+      margin-left: 8px;
+      color: $main;
+      cursor: pointer;
+      a {
+        color: $main;
+      }
+    }
+  }
+}
+.bottom-footer {
+  height: 68px;
+  background-color: $footer-bottom;
+  padding: 22px 0;
+  color: $navlinks;
+  > p {
+    strong#st {
+      color: $main;
+    }
+  }
+  .social-medias {
+    display: flex;
+    justify-content: flex-end;
+    i {
+      margin-right: 20px;
+    }
+  }
+}
