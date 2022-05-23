@@ -2,9 +2,12 @@
 @import "../utils/mixins";
 
 .main-carousel {
-  width: 1170px;
+  //   width: 1100px !important;
   position: relative;
-  left: 52px;
+  //   left: 52px;
+  &__image {
+    width: 100%;
+  }
   &__content {
     position: absolute;
     top: 130px;
@@ -40,12 +43,12 @@
   &__slide-button {
     > button#left {
       position: absolute;
-      top: 200px;
+      top: 250px;
       left: 20px;
     }
     > button#right {
       position: absolute;
-      top: 200px;
+      top: 250px;
       right: 20px;
     }
     > button {
@@ -67,9 +70,284 @@
     }
   }
 }
-// .owl-prev {
-//   display: none !important;
-// }
-// .owl-next {
-//   display: none !important;
-// }
+//  //
+.colorful-cards {
+  margin: 50px 0;
+  &__card {
+    @include padding(26px, 30px, 26px, 30px);
+    height: 110px;
+    .card__desc {
+      @include padding(0px, 0px, 0px, 20px);
+      color: $navlinks;
+      > h4 {
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+    }
+  }
+  &__card#first-card {
+    background-color: $first-card;
+    margin-right: 20px;
+  }
+  &__card#second-card {
+    background-color: $second-card;
+    margin-right: 20px;
+  }
+  &__card#third-card {
+    background-color: $third-card;
+  }
+  .col-lg-4 {
+    padding: 0;
+  }
+}
+.title-products {
+  text-align: center;
+  color: $navlinks;
+  > h2 {
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+.product {
+  border: 1px solid $border;
+  border-radius: 6px;
+  height: 390px;
+  width: 270px;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  &__image {
+    overflow: hidden;
+    @include transition;
+
+    > img {
+      width: 100%;
+      @include transition;
+    }
+    > img:hover {
+    }
+  }
+
+  &__desc {
+    > h3 {
+      font-size: 18px;
+      a {
+        color: $navlinks;
+      }
+    }
+    > h3:hover {
+      > a {
+        color: $main;
+        @include transition;
+      }
+    }
+    > span {
+      font-size: 18px;
+      color: $navlinks;
+    }
+    > del {
+      font-size: 16px;
+      color: $a-color;
+    }
+  }
+  .product__icons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: $main;
+    z-index: 99999;
+    @include transition;
+
+    &__wishlist {
+      width: 46px;
+      @include transition;
+
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid $main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      position: absolute;
+      top: 32px;
+      left: 116px;
+      //   right: 132px;
+      background-color: white;
+    }
+    &__addtocard {
+      @include transition;
+
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid $main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 99;
+      top: 32px;
+      left: 116px;
+      //   left: 40px;
+      background-color: white;
+    }
+    &__quickview {
+      @include transition;
+
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid $main;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 32px;
+      left: 116px;
+      right: 72px;
+      background-color: white;
+    }
+  }
+}
+.product:hover {
+  img {
+    transform: scale(1.2);
+  }
+  @include transition;
+  border: 1px solid $main;
+  .product__icons {
+    &__addtocard {
+      left: 40px;
+    }
+    &__quickview {
+      left: 180px;
+    }
+  }
+}
+#owlcard {
+  .owl-stage-outer {
+    height: 450px;
+    margin: 30px 0;
+  }
+}
+
+// scale
+
+.scale {
+  position: relative;
+  &__left {
+    .image {
+      overflow: hidden;
+      img {
+        width: 100%;
+        @include transition;
+      }
+    }
+  }
+  &__right {
+    .image {
+      overflow: hidden;
+      position: relative;
+      right: 24px;
+      img {
+        width: 100%;
+        @include transition;
+      }
+    }
+  }
+  &__right:hover {
+    .image img {
+      transform: scale(1.1);
+      filter: brightness(70%);
+    }
+  }
+  &__left:hover {
+    .image img {
+      transform: scale(1.1);
+      filter: brightness(70%);
+    }
+  }
+  .desc {
+    position: absolute;
+    bottom: 70px;
+    text-transform: uppercase;
+    color: $nav-text-color;
+  }
+}
+.blog {
+  .title {
+    text-align: center;
+    margin: 40px 0;
+    h2 {
+      font-weight: 600;
+      color: $navlinks;
+    }
+    p {
+      font-size: 18px;
+      color: $a-color;
+    }
+  }
+  .blog-product {
+    margin: 50px 0;
+    width: 100%;
+    height: 100%;
+    .image {
+      > img {
+      }
+    }
+    .desc {
+      color: $navlinks;
+      line-height: 30px;
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        @include transition;
+      }
+      ul {
+        li {
+          font-size: 14px;
+
+          span:first-child {
+            font-weight: 600;
+          }
+        }
+      }
+      a {
+        color: $navlinks;
+        font-size: 16px;
+        font-weight: 500;
+        @include transition;
+      }
+      p:hover {
+        color: $main;
+        cursor: pointer;
+      }
+      a:hover {
+        color: $main;
+      }
+    }
+  }
+}
+// last section
+
+.last-section {
+  .image {
+    width: 180px;
+    height: 60px;
+    margin: 80px 0;
+
+    > img {
+      opacity: 0.3;
+      @include transition;
+    }
+    > img:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
