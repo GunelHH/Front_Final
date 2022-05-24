@@ -1,6 +1,6 @@
 .top-footer {
   background-color: #f0f0f0;
-  height: 374px; }
+  flex-direction: column; }
   .top-footer--bg {
     padding: 74px 0; }
   .top-footer__content {
@@ -30,7 +30,6 @@
         color: #e3a51e; }
 
 .bottom-footer {
-  height: 68px;
   background-color: #e4e4e4;
   padding: 22px 0;
   color: #333333; }
@@ -41,3 +40,8 @@
     justify-content: flex-end; }
     .bottom-footer .social-medias i {
       margin-right: 20px; }
+
+@media (max-width: 991px) {
+  .bottom-footer .social-medias {
+    display: flex;
+    justify-content: center; } }

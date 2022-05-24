@@ -1,10 +1,14 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
-
+// @media (max-width: 991px) {
+//   .main-carousel {
+//     &__content {
+//       display: none;
+//     }
+//   }
+// }
 .main-carousel {
-  //   width: 1100px !important;
   position: relative;
-  //   left: 52px;
   &__image {
     width: 100%;
   }
@@ -73,6 +77,7 @@
 //  //
 .colorful-cards {
   margin: 50px 0;
+  display: flex;
   &__card {
     @include padding(26px, 30px, 26px, 30px);
     height: 110px;
@@ -87,14 +92,17 @@
   }
   &__card#first-card {
     background-color: $first-card;
-    margin-right: 20px;
+    margin-right: 14px;
+    margin-bottom: 10px;
   }
   &__card#second-card {
     background-color: $second-card;
-    margin-right: 20px;
+    margin-right: 14px;
+    margin-bottom: 10px;
   }
   &__card#third-card {
     background-color: $third-card;
+    margin-right: 14px;
   }
   .col-lg-4 {
     padding: 0;
@@ -213,6 +221,7 @@
   }
 }
 .product:hover {
+  cursor: pointer;
   img {
     transform: scale(1.2);
   }
@@ -345,6 +354,7 @@
   }
   .top-item {
     > .slide-item {
+      display: flex;
       margin-left: 14px;
       width: 370px;
       height: 200px;
@@ -401,6 +411,7 @@
   .bottom-item {
     margin-top: 4px;
     > .slide-item {
+      display: flex;
       margin-left: 14px;
       width: 370px;
       height: 200px;
@@ -477,5 +488,60 @@
   img {
     width: 100%;
     cursor: pointer;
+  }
+}
+.scroll-top {
+  position: relative;
+  .scroll {
+    width: 46px;
+    height: 46px;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $nav-text-color;
+    border-radius: 12px;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .colorful-cards {
+    display: block;
+    &__card#first-card {
+      height: 154px;
+    }
+    &__card#second-card {
+      height: 154px;
+    }
+    &__card#third-card {
+      height: 154px;
+    }
+  }
+  .scale {
+    &__right {
+      position: relative;
+      right: -24px;
+    }
+    &__left {
+      height: 160px;
+      .desc {
+        position: relative;
+      }
+    }
+  }
+  .bottom-item {
+    margin-top: 20px;
+    .slide-item {
+      display: block !important;
+    }
+  }
+  .top-item {
+    margin-top: 20px;
+    .slide-item {
+      display: block !important;
+    }
   }
 }

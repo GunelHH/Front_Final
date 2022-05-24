@@ -107,7 +107,17 @@
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: space-around;
   @include padding(52px, 0px, 30px, 0px);
+  &__mobile__icons {
+    display: none;
+    ul li {
+      margin-right: 10px;
+      a {
+        color: $navlinks;
+      }
+    }
+  }
   &__links {
     ul:first-of-type {
       font-weight: 500;
@@ -416,8 +426,23 @@
     }
   }
 }
-@media (max-width: 991) {
+@media (max-width: 991px) {
   .top-nav {
     display: none;
+  }
+  .main-nav {
+    &__links {
+      ul {
+        li {
+          display: none;
+        }
+      }
+    }
+    &__icons {
+      display: none;
+    }
+    &__mobile__icons {
+      display: block;
+    }
   }
 }

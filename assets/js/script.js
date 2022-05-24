@@ -11,7 +11,7 @@ $("#owl").owlCarousel({
   navigation: false,
   responsive: {
     0: {
-      items: 0,
+      items: 1,
     },
     600: {
       items: 1,
@@ -25,14 +25,15 @@ $("#owl").owlCarousel({
 $("#owlcard").owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
+  dots: false,
 
   responsive: {
     0: {
-      items: 1,
+      items: 1.3,
     },
     600: {
-      items: 1,
+      items: 1.3,
     },
     1000: {
       items: 4,
@@ -60,7 +61,8 @@ $("#owlcard-slider").owlCarousel({
 $("#owlblog").owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
+  dots: false,
   responsive: {
     0: {
       items: 1,
@@ -76,10 +78,11 @@ $("#owlblog").owlCarousel({
 $("#lastcarousel").owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
+  dots: false,
   responsive: {
     0: {
-      items: 1,
+      items: 1.5,
     },
     600: {
       items: 3,

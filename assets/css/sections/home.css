@@ -48,7 +48,8 @@
       color: white; }
 
 .colorful-cards {
-  margin: 50px 0; }
+  margin: 50px 0;
+  display: flex; }
   .colorful-cards__card {
     padding: 26px 30px 26px 30px;
     height: 110px; }
@@ -60,12 +61,15 @@
         font-size: 18px; }
   .colorful-cards__card#first-card {
     background-color: #fcedda;
-    margin-right: 20px; }
+    margin-right: 14px;
+    margin-bottom: 10px; }
   .colorful-cards__card#second-card {
     background-color: #f2fbcb;
-    margin-right: 20px; }
+    margin-right: 14px;
+    margin-bottom: 10px; }
   .colorful-cards__card#third-card {
-    background-color: #f7d8f9; }
+    background-color: #f7d8f9;
+    margin-right: 14px; }
   .colorful-cards .col-lg-4 {
     padding: 0; }
 
@@ -157,6 +161,7 @@
       background-color: white; }
 
 .product:hover {
+  cursor: pointer;
   transition: 0.2s ease-in all;
   border: 1px solid #e3a51e; }
   .product:hover img {
@@ -243,6 +248,7 @@
     color: #666666; }
 
 .third .top-item > .slide-item {
+  display: flex;
   margin-left: 14px;
   width: 370px;
   height: 200px;
@@ -283,6 +289,7 @@
 .third .bottom-item {
   margin-top: 4px; }
   .third .bottom-item > .slide-item {
+    display: flex;
     margin-left: 14px;
     width: 370px;
     height: 200px;
@@ -333,3 +340,43 @@
 .image-left img {
   width: 100%;
   cursor: pointer; }
+
+.scroll-top {
+  position: relative; }
+  .scroll-top .scroll {
+    width: 46px;
+    height: 46px;
+    background-color: #e3a51e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 12px;
+    position: absolute;
+    right: 50px;
+    bottom: 100px; }
+
+@media (max-width: 991px) {
+  .colorful-cards {
+    display: block; }
+    .colorful-cards__card#first-card {
+      height: 154px; }
+    .colorful-cards__card#second-card {
+      height: 154px; }
+    .colorful-cards__card#third-card {
+      height: 154px; }
+  .scale__right {
+    position: relative;
+    right: -24px; }
+  .scale__left {
+    height: 160px; }
+    .scale__left .desc {
+      position: relative; }
+  .bottom-item {
+    margin-top: 20px; }
+    .bottom-item .slide-item {
+      display: block !important; }
+  .top-item {
+    margin-top: 20px; }
+    .top-item .slide-item {
+      display: block !important; } }
