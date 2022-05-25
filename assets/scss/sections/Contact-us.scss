@@ -1,2 +1,76 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
+
+.contact-title {
+  h5 {
+    color: $navlinks;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 120px 0 30px;
+  }
+}
+
+.contact-form {
+  input {
+    background-color: #f3f6f5;
+    border: none;
+    outline: none;
+    padding: 14px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  &__textarea {
+    textarea {
+      background-color: #f3f6f5;
+      width: 100%;
+      height: 150px;
+      border: none;
+      outline: none;
+      color: #a3a3a3;
+    }
+  }
+  &__btn {
+    margin-bottom: 60px;
+    button {
+      border: none;
+      padding: 14px 20px;
+      color: $main;
+      font-weight: 500;
+      text-transform: uppercase;
+      background-color: $navlinks;
+      margin: 40px 0;
+      @include transition;
+    }
+    button:hover {
+      background-color: $main;
+      color: $nav-text-color;
+    }
+  }
+}
+.contact-contact {
+  margin-bottom: 50px;
+  color: $a-color;
+  p {
+    margin-bottom: 30px;
+  }
+  ul {
+    li {
+      margin: 28px 0;
+      border-bottom: 1px solid $border;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+  h3 {
+    font-size: 16px;
+    color: $navlinks;
+  }
+  p:last-of-type {
+    color: $navlinks;
+    font-weight: 500;
+    span {
+      color: $a-color;
+    }
+  }
+}
