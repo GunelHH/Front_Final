@@ -1,0 +1,35 @@
+.change-pages {
+  height: 80px;
+  border: 1px solid $border;
+  margin: 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    width: 46px;
+    height: 46px;
+    border: 1px solid $border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 6px;
+    @include transition;
+    a {
+      color: $navlinks;
+    }
+  }
+  &__icon.active {
+    background-color: $main;
+    a {
+      color: $nav-text-color;
+    }
+  }
+  &__icon:hover {
+    background-color: $main;
+    cursor: pointer;
+    a {
+      color: $nav-text-color;
+    }
+  }
+}

@@ -1,2 +1,36 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
+
+.blog-product {
+  .desc {
+    a {
+      color: $navlinks;
+    }
+  }
+}
+.blog-title {
+  .title-section {
+    background-image: url(https://htmldemo.net/juan/juan/assets/img/banner/breadcrumb-banner.jpg);
+    &__title {
+      text-align: center;
+      color: $navlinks;
+      @include padding(55px, 0, 55px, 0px);
+      h5 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      a {
+        font-size: 16px;
+        @include transition;
+        color: $navlinks;
+      }
+      a span.active {
+        color: $main;
+      }
+      a:hover {
+        color: $main;
+        cursor: pointer;
+      }
+    }
+  }
+}

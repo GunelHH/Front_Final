@@ -30,12 +30,682 @@
     />
     <link
       rel="shortcut icon"
-      href="assets/images/tab-icon.webp"
+      href="assets/images/tab/tab-icon.webp"
       type="image/x-icon"
     />
     <title>Juan-Shoes Store</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav-cus">
+        <div class="top-nav">
+          <div class="container">
+            <div class="top-nav-all">
+              <div class="top-nav__left">
+                <p>Welcome to Juan online store</p>
+              </div>
+              <div class="top-nav__right">
+                <ul class="nav__right__elements">
+                  <li class="nav__right__currency">
+                    <a href="#"
+                      >$ Dollar (US)
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="drop-down__currency">
+                      <ul>
+                        <li><a href="#">$ Usd</a></li>
+                        <li><a href="#"> € EURO</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav__right__language">
+                    <a href="#">
+                      <img src="assets/images/icons/en.webp" alt="Flag" />
+                      English
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <div class="drop-down__language">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <img src="assets/images/icons/en.webp" alt="Flag" />
+                            English
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="assets/images/icons/fr.webp" alt="Flag" />
+                            French
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="main-nav">
+              <div class="col-lg-3">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/logo/logo.webp" alt="Logo"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="main-nav__links">
+                  <ul class="d-flex">
+                    <li id="home">
+                      <a id="hm" href="index.html" target="_blank"
+                        >Home <i class="fa fa-angle-down"></i
+                      ></a>
+                      <div class="drop-down__home">
+                        <ul>
+                          <li>
+                            <a href="index.html" target="_blank">
+                              Home Version 01
+                            </a>
+                          </li>
+                          <li>
+                            <a href="index.html" target="_blank">
+                              Home Version 02
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="pages">
+                      <a id="pg" href="#"
+                        >Pages <i class="fa fa-angle-down"></i
+                      ></a>
+                      <div class="drop-down__pages">
+                        <div class="row">
+                          <div class="col-lg-3 cols">
+                            <ul>
+                              <li><a class="title" href="#">Column 01</a></li>
+                              <li>
+                                <a href="Products.html" target="_blank"
+                                  >Shop Grid Left Side bar</a
+                                >
+                              </li>
+                              <li>
+                                <a href="Products.html" target="_blank"
+                                  >Shop Grid Right Side bar</a
+                                >
+                              </li>
+                              <li>
+                                <a href="Products.html" target="_blank"
+                                  >Shop List Left Side bar</a
+                                >
+                              </li>
+                              <li>
+                                <a href="Products.html" target="_blank"
+                                  >Shop List Right Side bar</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-3 cols">
+                            <ul>
+                              <li><a class="title" href="#">Column 02</a></li>
+                              <li>
+                                <a href="Product-single.html"
+                                  >Products Details
+                                </a>
+                              </li>
+                              <li>
+                                <a href="Product-single.html"
+                                  >Products Details Affiliate</a
+                                >
+                              </li>
+                              <li>
+                                <a href="Product-single.html"
+                                  >Products Details Variable</a
+                                >
+                              </li>
+                              <li>
+                                <a href="Product-single.html"
+                                  >Products Details Group</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-3 cols">
+                            <ul>
+                              <li><a class="title" href="#">Column 03</a></li>
+                              <li>
+                                <a href="Card.html">Cart </a>
+                              </li>
+                              <li>
+                                <a href="Card.html">Check out</a>
+                              </li>
+                              <li>
+                                <a href="Card.html">Compare</a>
+                              </li>
+                              <li>
+                                <a href="Card.html">WishList</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-3 cols">
+                            <ul>
+                              <li><a class="title" href="#">Column 04</a></li>
+                              <li>
+                                <a href="Contact-us.html">My-Account </a>
+                              </li>
+                              <li>
+                                <a href="Contact-us.html">Login & Register</a>
+                              </li>
+                              <li>
+                                <a href="Contact-us.html">Contact us</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li id="shop">
+                      <a id="sp" href="Products.html"
+                        >Shop <i class="fa fa-angle-down"></i
+                      ></a>
+                      <div class="drop-down__shop">
+                        <ul>
+                          <li id="grid">
+                            <a href="#"
+                              >Shop Grid Layout <i class="fa fa-angle-right"></i
+                            ></a>
+                            <div class="drop-down__shop--shopGrid">
+                              <ul>
+                                <li>
+                                  <a href="Products.html"
+                                    >Shop Grid Left Side Bar</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Shop Grid Right Side Bar</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Shop Grid Full 3 Col</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Shop Grid Full 4 Col</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li id="list">
+                            <a href="#"
+                              >Shop List Layout
+                              <i class="fa fa-angle-right"></i>
+                            </a>
+                            <div class="drop-down__shop--shopList">
+                              <ul>
+                                <li>
+                                  <a href="Products.html"
+                                    >Shop List Left Sidebar</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Shop List Left Sidebar</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Shop List Full Width</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li id="product">
+                            <a href="#"
+                              >Product Details
+                              <i class="fa fa-angle-right"></i>
+                            </a>
+                            <div class="drop-down__shop--productDetails">
+                              <ul>
+                                <li>
+                                  <a href="Products.html">Product Details</a>
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Product Details Affiliate</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Product Details Variable</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="Products.html"
+                                    >Product Details Group</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="blog">
+                      <a id="bg" href="Blogs.html" target="_blank"
+                        >Blog <i class="fa fa-angle-down"></i
+                      ></a>
+                      <div class="drop-down__blog">
+                        <ul>
+                          <li>
+                            <a href="Blogs.html" target="_blank"
+                              >Blog Left Sidebar</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Blogs.html" target="_blank"
+                              >Blog Right Sidebar</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Blogs.html" target="_blank"
+                              >Blog Grid No Sidebar</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Blogs.html" target="_blank"
+                              >Blog Details</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Blogs.html" target="_blank"
+                              >Blog Details Audio</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Blogs.html" target="_blank"
+                              >Blog Details Video</a
+                            >
+                          </li>
+                          <li>
+                            <a href="Blogs.html">Blog Details Left Sidebar</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="contactus">
+                      <a id="cu" href="Contact-us.html" target="_blank"
+                        >Contact us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="main-nav__icons">
+                  <ul class="d-flex">
+                    <li id="search">
+                      <a href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="ant-design:search-outlined"
+                        ></span
+                      ></a>
+                    </li>
+                    <li id="set">
+                      <a href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="arcticons:settings"
+                        ></span
+                      ></a>
+                      <div class="drop-down__icons">
+                        <ul>
+                          <li><a href="Contact-us.html">Login</a></li>
+                          <li><a href="Contact-us.html">Register</a></li>
+                          <li><a href="Contact-us.html">My Account</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li id="bag">
+                      <a href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="akar-icons:shopping-bag"
+                        ></span
+                      ></a>
+                      <div>
+                        <span>5</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-nav__mobile__icons">
+                  <ul class="d-flex">
+                    <li>
+                      <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="blog-title">
+        <div class="title-section">
+          <div class="container">
+            <div class="title-section__title">
+              <h5>BLOG</h5>
+              <a href="index.html"
+                >Home <span>/</span>
+                <span class="active">Blog No Sidenbar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog products -->
+      <div class="container">
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-4">
+            <div class="blog-product">
+              <div class="image">
+                <img src="assets/images/blog/blog-1.webp" alt="shoes" />
+              </div>
+              <div class="desc">
+                <p>People are willing lie when to comes money research from</p>
+                <ul class="d-flex p-0">
+                  <li>
+                    <span>By: </span>
+                    <span>Admin, </span>
+                  </li>
+                  <li>
+                    <span> On: </span>
+                    <span>14.07.2029</span>
+                  </li>
+                </ul>
+                <a href="Blog-single.html">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-product">
+              <div class="image">
+                <img src="assets/images/blog/blog-2.webp" alt="shoes" />
+              </div>
+              <div class="desc">
+                <p>People are willing lie when to comes money research from</p>
+                <ul class="d-flex p-0">
+                  <li>
+                    <span>By: </span>
+                    <span>Admin, </span>
+                  </li>
+                  <li>
+                    <span> On: </span>
+                    <span>14.07.2029</span>
+                  </li>
+                </ul>
+                <a href="Blog-single.html">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-product">
+              <div class="image">
+                <img src="assets/images/blog/blog-3.jpg" alt="shoes" />
+              </div>
+              <div class="desc">
+                <p>People are willing lie when to comes money research from</p>
+                <ul class="d-flex p-0">
+                  <li>
+                    <span>By: </span>
+                    <span>Admin, </span>
+                  </li>
+                  <li>
+                    <span> On: </span>
+                    <span>14.07.2029</span>
+                  </li>
+                </ul>
+                <a href="Blog-single.html">Read More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-4">
+            <div class="blog-product">
+              <div class="image">
+                <img src="assets/images/blog/blog-4.webp" alt="shoes" />
+              </div>
+              <div class="desc">
+                <p>People are willing lie when to comes money research from</p>
+                <ul class="d-flex p-0">
+                  <li>
+                    <span>By: </span>
+                    <span>Admin, </span>
+                  </li>
+                  <li>
+                    <span> On: </span>
+                    <span>14.07.2029</span>
+                  </li>
+                </ul>
+                <a href="Blog-single.html">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-product">
+              <div class="image">
+                <iframe
+                  width="370"
+                  height="240"
+                  src="https://www.youtube.com/embed/4qNHr0W6F0o"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="desc">
+                <p>People are willing lie when to comes money research from</p>
+                <ul class="d-flex p-0">
+                  <li>
+                    <span>By: </span>
+                    <span>Admin, </span>
+                  </li>
+                  <li>
+                    <span> On: </span>
+                    <span>14.07.2029</span>
+                  </li>
+                </ul>
+                <a href="Blog-single.html">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-product">
+              <div class="image">
+                <img src="assets/images/blog/blog-3.jpg" alt="shoes" />
+              </div>
+              <div class="desc">
+                <p>People are willing lie when to comes money research from</p>
+                <ul class="d-flex p-0">
+                  <li>
+                    <span>By: </span>
+                    <span>Admin, </span>
+                  </li>
+                  <li>
+                    <span> On: </span>
+                    <span>14.07.2029</span>
+                  </li>
+                </ul>
+                <a href="Blog-single.html">Read More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Change -->
+
+        <div class="blog-change">
+          <div class="change-pages">
+            <div class="change-pages__icon">
+              <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+            </div>
+            <div class="change-pages__icon active">
+              <a href="#">1</a>
+            </div>
+            <div class="change-pages__icon">
+              <a href="#">2</a>
+            </div>
+            <div class="change-pages__icon">
+              <a href="#">3</a>
+            </div>
+            <div class="change-pages__icon">
+              <a href="#"> <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <div class="top-footer--bg">
+          <div class="container">
+            <div class="top-footer__content">
+              <div class="row">
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                  <div class="top-footer__title">
+                    <h5>My Account</h5>
+                  </div>
+                  <div class="top-footer__links">
+                    <ul class="p-0">
+                      <li>
+                        <span
+                          class="iconify"
+                          data-icon="bytesize:location"
+                        ></span>
+                        184 Main Rd E, St Albans VIC 3021, Australia
+                      </li>
+                      <li>
+                        <span
+                          class="iconify"
+                          data-icon="clarity:email-line"
+                        ></span>
+                        <span>Mail Us: </span>
+                        <a href="#">yourmail@gmail.com</a>
+                      </li>
+                      <li>
+                        <span class="iconify" data-icon="bi:telephone"></span>
+                        <span>Phone: </span>
+                        <a href="#">+00 254 255255</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12 col-md-12">
+                  <div class="top-footer__title">
+                    <h5>Categories</h5>
+                  </div>
+                  <ul class="p-0 footer-links">
+                    <li>Ecommerce</li>
+                    <li>Shopify</li>
+                    <li>Prestashop</li>
+                    <li>Opencart</li>
+                    <li>Magento</li>
+                    <li>Jigoshop</li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-12">
+                  <div class="top-footer__title">
+                    <h5>Information</h5>
+                  </div>
+                  <ul class="p-0 footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About Us </a></li>
+                    <li><a href="Contact-us.html">Contact Us</a></li>
+                    <li><a href="index.html">Returns & Exchanges</a></li>
+                    <li><a href="index.html">Shipping & Delivery</a></li>
+                    <li><a href="index.html">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-12">
+                  <div class="top-footer__title">
+                    <h5>Quick Links</h5>
+                  </div>
+                  <ul class="p-0 footer-links">
+                    <li>Store Location</li>
+                    <li>My Account</li>
+                    <li>Orders Tracking</li>
+                    <li>Size Guide</li>
+                    <li>Shopping Rates</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p>
+                © 2021 <strong>Juan</strong> Made with <span>♥️</span> by
+                <strong style="color: #e3a51e">HasThemes</strong>
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="social-medias">
+                <i
+                  ><span
+                    class="iconify"
+                    data-icon="dashicons:facebook-alt"
+                  ></span
+                ></i>
+                <i>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:twitter-fill"
+                  ></span
+                ></i>
+                <i
+                  ><span
+                    class="iconify"
+                    data-icon="akar-icons:linkedin-box-fill"
+                  ></span
+                ></i>
+                <i
+                  ><span
+                    class="iconify"
+                    data-icon="akar-icons:instagram-fill"
+                  ></span
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
   <!-- Jquery link -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -50,4 +720,15 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"
   ></script>
+
+  <!-- iconify -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+    integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="assets/js/sections/header.js"></script>
 </html>

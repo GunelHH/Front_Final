@@ -240,35 +240,6 @@ input[type="range"]::-moz-range-thumb {
 .card-product .item-card {
   margin: 30px; }
 
-.change-pages {
-  height: 80px;
-  border: 1px solid #e5e5e5;
-  margin: 30px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .change-pages__icon {
-    width: 46px;
-    height: 46px;
-    border: 1px solid #e5e5e5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    border-radius: 6px;
-    transition: 0.2s ease-in all; }
-    .change-pages__icon a {
-      color: #333333; }
-  .change-pages__icon.active {
-    background-color: #e3a51e; }
-    .change-pages__icon.active a {
-      color: white; }
-  .change-pages__icon:hover {
-    background-color: #e3a51e;
-    cursor: pointer; }
-    .change-pages__icon:hover a {
-      color: white; }
-
 @media (max-width: 991px) {
   .selection {
     display: block;

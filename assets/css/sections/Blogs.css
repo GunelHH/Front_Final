@@ -1,0 +1,21 @@
+.blog-product .desc a {
+  color: #333333; }
+
+.blog-title .title-section {
+  background-image: url(https://htmldemo.net/juan/juan/assets/img/banner/breadcrumb-banner.jpg); }
+  .blog-title .title-section__title {
+    text-align: center;
+    color: #333333;
+    padding: 55px 0 55px 0px; }
+    .blog-title .title-section__title h5 {
+      font-size: 24px;
+      font-weight: 600; }
+    .blog-title .title-section__title a {
+      font-size: 16px;
+      transition: 0.2s ease-in all;
+      color: #333333; }
+    .blog-title .title-section__title a span.active {
+      color: #e3a51e; }
+    .blog-title .title-section__title a:hover {
+      color: #e3a51e;
+      cursor: pointer; }
