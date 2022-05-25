@@ -1,6 +1,9 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
 
+nav {
+  z-index: 12;
+}
 .nav-cus {
   position: relative;
 }
@@ -163,6 +166,7 @@
         opacity: 1;
         transition: 0.2s linear all;
         visibility: visible;
+        z-index: 2;
       }
       li#shop:hover .drop-down__shop {
         transform: translateY(0px);
@@ -186,10 +190,9 @@
     background-color: $nav-text-color;
     border: 1px solid $border;
     position: absolute;
-    left: 454px;
+    left: 328px;
     top: 100%;
     @include transition;
-    z-index: 122;
     transform: translateY(14px);
     opacity: 0;
     visibility: hidden;
@@ -209,15 +212,15 @@
     }
   }
   .drop-down__pages {
-    width: 1188px;
+    width: 1296px;
     height: 214px;
     background-color: $nav-text-color;
     border: 1px solid $border;
     position: absolute;
-    left: 108px;
+    left: 12px;
     top: 100%;
+    z-index: 3;
     @include transition;
-    z-index: 122;
     transform: translateY(14px);
     opacity: 0;
     visibility: hidden;
@@ -271,7 +274,7 @@
           background-color: $nav-text-color;
           border: 1px solid $border;
           position: absolute;
-          left: 26%;
+          left: 34%;
           top: 46px;
           @include transition;
           z-index: 122;
@@ -315,7 +318,7 @@
     background-color: $nav-text-color;
     border: 1px solid $border;
     position: absolute;
-    left: 42%;
+    left: 40%;
     top: 100%;
     @include transition;
     z-index: 122;
@@ -404,7 +407,7 @@
     background-color: $nav-text-color;
     border: 1px solid $border;
     position: absolute;
-    left: 48%;
+    left: 46%;
     top: 100%;
     @include transition;
     z-index: 122;
@@ -428,6 +431,9 @@
     }
   }
 }
+// main {
+//   z-index: -1;
+// }
 @media (max-width: 991px) {
   .top-nav {
     display: none;

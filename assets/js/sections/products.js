@@ -46,9 +46,13 @@ const selectButton = document.querySelector(".selection__select");
 const selectItems = document.querySelector(".selection__items");
 const selectItem = document.querySelectorAll(".selection__items__item ");
 selectButton.addEventListener("click", () => {
-  selectButton.lastElementChild.style.transform = "rotate(-180deg)";
-  selectItems.style.display = "block";
-
+  if (selectItems.classList.contains("active-select")) {
+    selectItems.classList.remove("active-select");
+    selectButton.lastElementChild.style.transform = "rotate(0deg)";
+  } else {
+    selectItems.classList.add("active-select");
+    selectButton.lastElementChild.style.transform = "rotate(-180deg)";
+  }
   if (
     selectItem.forEach((e) => {
       e.addEventListener("click", () => {
@@ -58,3 +62,5 @@ selectButton.addEventListener("click", () => {
   ) {
   }
 });
+
+selectButton.toggle;

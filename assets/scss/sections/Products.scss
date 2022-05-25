@@ -25,6 +25,10 @@
     }
   }
 }
+.active-select {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .categories {
   color: $navlinks;
   h5 {
@@ -260,7 +264,9 @@ input[type="range"]::-moz-range-thumb {
     border-color: #dbdbdb;
   }
   &__items {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s linear;
     position: absolute;
     top: 46px;
     left: 86px;

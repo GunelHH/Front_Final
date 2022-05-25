@@ -17,6 +17,10 @@
       color: #e3a51e;
       cursor: pointer; }
 
+.active-select {
+  opacity: 1 !important;
+  visibility: visible !important; }
+
 .categories {
   color: #333333; }
   .categories h5 {
@@ -214,7 +218,9 @@ input[type="range"]::-moz-range-thumb {
     cursor: pointer;
     border-color: #dbdbdb; }
   .selection__items {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s linear;
     position: absolute;
     top: 46px;
     left: 86px;

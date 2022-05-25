@@ -1,3 +1,6 @@
+nav {
+  z-index: 12; }
+
 .nav-cus {
   position: relative; }
 
@@ -125,7 +128,8 @@
       transform: translateY(0px);
       opacity: 1;
       transition: 0.2s linear all;
-      visibility: visible; }
+      visibility: visible;
+      z-index: 2; }
     .main-nav__links ul:first-of-type li#shop:hover .drop-down__shop {
       transform: translateY(0px);
       opacity: 1;
@@ -142,10 +146,9 @@
     background-color: white;
     border: 1px solid #e5e5e5;
     position: absolute;
-    left: 454px;
+    left: 328px;
     top: 100%;
     transition: 0.2s ease-in all;
-    z-index: 122;
     transform: translateY(14px);
     opacity: 0;
     visibility: hidden; }
@@ -160,15 +163,15 @@
           color: #e3a51e;
           transition: 0.2s ease-in all; }
   .main-nav .drop-down__pages {
-    width: 1188px;
+    width: 1296px;
     height: 214px;
     background-color: white;
     border: 1px solid #e5e5e5;
     position: absolute;
-    left: 108px;
+    left: 12px;
     top: 100%;
+    z-index: 3;
     transition: 0.2s ease-in all;
-    z-index: 122;
     transform: translateY(14px);
     opacity: 0;
     visibility: hidden; }
@@ -217,7 +220,7 @@
         background-color: white;
         border: 1px solid #e5e5e5;
         position: absolute;
-        left: 26%;
+        left: 34%;
         top: 46px;
         transition: 0.2s ease-in all;
         z-index: 122;
@@ -257,7 +260,7 @@
     background-color: white;
     border: 1px solid #e5e5e5;
     position: absolute;
-    left: 42%;
+    left: 40%;
     top: 100%;
     transition: 0.2s ease-in all;
     z-index: 122;
@@ -334,7 +337,7 @@
     background-color: white;
     border: 1px solid #e5e5e5;
     position: absolute;
-    left: 48%;
+    left: 46%;
     top: 100%;
     transition: 0.2s ease-in all;
     z-index: 122;

@@ -26,26 +26,30 @@
       transition: 0.3s ease-in all; }
       .main-carousel__content > button:hover a {
         color: #e3a51e; }
-  .main-carousel__slide-button > button#left {
-    position: absolute;
-    top: 250px;
-    left: 20px; }
-  .main-carousel__slide-button > button#right {
-    position: absolute;
-    top: 250px;
-    right: 20px; }
-  .main-carousel__slide-button > button {
-    border: none;
-    width: 46px;
-    height: 46px;
-    background-color: #f5f5f5;
-    transition: 0.2s ease-in all; }
-    .main-carousel__slide-button > button i {
-      color: #333333; }
-  .main-carousel__slide-button > button:hover {
-    background-color: #e3a51e; }
-    .main-carousel__slide-button > button:hover i {
-      color: white; }
+
+.owl-prev {
+  width: 46px;
+  height: 46px;
+  background-color: white !important;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transition: 0.2s ease-in all; }
+
+.owl-prev:hover {
+  background-color: #e3a51e !important; }
+
+.owl-next:hover {
+  background-color: #e3a51e !important; }
+
+.owl-next {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  background-color: white !important;
+  top: 50%;
+  right: 30px;
+  transition: 0.2s ease-in all; }
 
 .colorful-cards {
   margin: 50px 0;
