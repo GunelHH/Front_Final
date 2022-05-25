@@ -92,3 +92,17 @@ $("#lastcarousel").owlCarousel({
     },
   },
 });
+
+// sticky
+
+const sticky = document.querySelector(".scroll-top");
+
+sticky.addEventListener("click", (e) => {
+  window.scroll({
+    top: 100,
+    left: 100,
+    behavior: "smooth",
+  });
+
+  e.preventDefault();
+});

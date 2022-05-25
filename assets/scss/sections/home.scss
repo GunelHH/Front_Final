@@ -490,8 +490,16 @@
     cursor: pointer;
   }
 }
+
+// sticky
+
 .scroll-top {
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: -22px;
+  z-index: 12;
+
   .scroll {
     width: 46px;
     height: 46px;
@@ -501,9 +509,6 @@
     align-items: center;
     color: $nav-text-color;
     border-radius: 12px;
-    position: absolute;
-    right: 50px;
-    bottom: 100px;
   }
 }
 

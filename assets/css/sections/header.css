@@ -84,7 +84,9 @@
   height: 100%;
   align-items: center;
   justify-content: space-around;
-  padding: 52px 0px 30px 0px; }
+  padding: 52px 0px 30px 0px;
+  position: sticky;
+  top: 200px; }
   .main-nav__mobile__icons {
     display: none; }
     .main-nav__mobile__icons ul li {
