@@ -88,8 +88,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   padding: 52px 0px 30px 0px;
-  position: sticky;
-  top: 200px; }
+  position: relative; }
   .main-nav__mobile__icons {
     display: none; }
     .main-nav__mobile__icons ul li {
@@ -163,8 +162,8 @@ nav {
           color: #e3a51e;
           transition: 0.2s ease-in all; }
   .main-nav .drop-down__pages {
-    width: 1296px;
-    height: 214px;
+    width: 100%;
+    min-height: 214px;
     background-color: white;
     border: 1px solid #e5e5e5;
     position: absolute;
@@ -359,9 +358,11 @@ nav {
 @media (max-width: 991px) {
   .top-nav {
     display: none; }
-  .main-nav__links ul li {
-    display: none; }
-  .main-nav__icons {
-    display: none; }
-  .main-nav__mobile__icons {
-    display: block; } }
+  .main-nav {
+    padding: 14px 0; }
+    .main-nav__links ul li {
+      display: none; }
+    .main-nav__icons {
+      display: none; }
+    .main-nav__mobile__icons {
+      display: block; } }

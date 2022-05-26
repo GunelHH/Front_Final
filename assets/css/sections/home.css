@@ -362,6 +362,21 @@
     border-radius: 12px; }
 
 @media (max-width: 991px) {
+  .main-carousel__image {
+    height: 350px; }
+    .main-carousel__image img {
+      height: 100%;
+      object-fit: cover; }
+  .main-carousel__content {
+    position: absolute;
+    top: 44px;
+    left: 12px; }
+    .main-carousel__content h2 {
+      font-size: 30px; }
+  .owl-prev {
+    display: none !important; }
+  .owl-next {
+    display: none !important; }
   .colorful-cards {
     display: block; }
     .colorful-cards__card#first-card {
@@ -373,10 +388,15 @@
   .scale__right {
     position: relative;
     right: -24px; }
+    .scale__right .desc {
+      position: relative;
+      bottom: 64px;
+      right: 22px; }
   .scale__left {
     height: 160px; }
     .scale__left .desc {
-      position: relative; }
+      position: relative;
+      bottom: 64px; }
   .bottom-item {
     margin-top: 20px; }
     .bottom-item .slide-item {

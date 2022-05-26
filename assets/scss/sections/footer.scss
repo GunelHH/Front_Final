@@ -61,6 +61,11 @@
     justify-content: flex-end;
     i {
       margin-right: 20px;
+      @include transition;
+    }
+    i:hover {
+      color: $main;
+      cursor: pointer;
     }
   }
 }

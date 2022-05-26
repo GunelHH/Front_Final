@@ -39,7 +39,11 @@
     display: flex;
     justify-content: flex-end; }
     .bottom-footer .social-medias i {
-      margin-right: 20px; }
+      margin-right: 20px;
+      transition: 0.2s ease-in all; }
+    .bottom-footer .social-medias i:hover {
+      color: #e3a51e;
+      cursor: pointer; }
 
 @media (max-width: 991px) {
   .bottom-footer .social-medias {

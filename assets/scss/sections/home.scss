@@ -39,37 +39,6 @@
     }
   }
 }
-// .main-carousel__slide-button {
-//   position: relative;
-//   > button#left {
-//     position: absolute;
-//     bottom: 200px;
-//     left: 30px;
-//   }
-//   > button#right {
-//     position: absolute;
-//     bottom: 200px;
-//     right: 30px;
-//   }
-//   > button {
-//     z-index: 1;
-//     border: none;
-//     width: 46px;
-//     height: 46px;
-//     background-color: #f6f6f6;
-//     @include transition;
-
-//     i {
-//       color: $navlinks;
-//     }
-//   }
-//   > button:hover {
-//     background-color: $main;
-//     i {
-//       color: $nav-text-color;
-//     }
-//   }
-// }
 
 .owl-prev {
   width: 46px;
@@ -534,6 +503,30 @@
 }
 
 @media (max-width: 991px) {
+  .main-carousel {
+    &__image {
+      height: 350px;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .main-carousel__content {
+    position: absolute;
+    top: 44px;
+    left: 12px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .owl-prev {
+    display: none !important;
+  }
+  .owl-next {
+    display: none !important;
+  }
+
   .colorful-cards {
     display: block;
     &__card#first-card {
@@ -550,11 +543,17 @@
     &__right {
       position: relative;
       right: -24px;
+      .desc {
+        position: relative;
+        bottom: 64px;
+        right: 22px;
+      }
     }
     &__left {
       height: 160px;
       .desc {
         position: relative;
+        bottom: 64px;
       }
     }
   }

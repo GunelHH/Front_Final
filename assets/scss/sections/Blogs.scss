@@ -2,6 +2,14 @@
 @import "../utils/mixins";
 
 .blog-product {
+  .image {
+    img {
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
   .desc {
     a {
       color: $navlinks;

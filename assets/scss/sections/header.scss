@@ -112,8 +112,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   @include padding(52px, 0px, 30px, 0px);
-  position: sticky;
-  top: 200px;
+  position: relative;
   &__mobile__icons {
     display: none;
     ul li {
@@ -212,8 +211,8 @@ nav {
     }
   }
   .drop-down__pages {
-    width: 1296px;
-    height: 214px;
+    width: 100%;
+    min-height: 214px;
     background-color: $nav-text-color;
     border: 1px solid $border;
     position: absolute;
@@ -431,14 +430,13 @@ nav {
     }
   }
 }
-// main {
-//   z-index: -1;
-// }
+
 @media (max-width: 991px) {
   .top-nav {
     display: none;
   }
   .main-nav {
+    padding: 14px 0;
     &__links {
       ul {
         li {
