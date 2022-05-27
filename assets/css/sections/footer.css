@@ -48,4 +48,6 @@
 @media (max-width: 991px) {
   .bottom-footer .social-medias {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .bottom-footer p {
+    text-align: center; } }

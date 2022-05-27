@@ -20,6 +20,24 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Owl CArousel -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Font-family -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -480,7 +498,7 @@
                 <div class="product-details__btn">
                   <div class="product-details__btn--leftbtn">
                     <span id="minus">-</span>
-                    <input type="text" value="1" />
+                    <input id="input" type="text" value="1" />
                     <span id="plus">+</span>
                   </div>
                   <div class="product-details__btn--rightbtn">
@@ -505,11 +523,17 @@
       <section class="container">
         <div class="padding-product">
           <div class="product-change-pages">
-            <ul class="p-0 m-0">
-              <li class="active"><a href="#">Description</a></li>
-              <li><a href="#">Information</a></li>
-              <li><a href="#">Reviews</a></li>
-            </ul>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul class="p-0 m-0">
+                  <li id="description" class="active">
+                    <a href="#">Description</a>
+                  </li>
+                  <li id="information"><a href="#">Information</a></li>
+                  <li id="reviews"><a href="#">Reviews</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="product-change-pages__description">
             <p>
@@ -624,6 +648,225 @@
               </div>
               <button>Continue</button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- carousel -->
+
+      <section>
+        <div class="product-carousel container">
+          <div class="product-carousel__title">
+            <h3>Related Product</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          </div>
+          <div class="product-carousel__carousel">
+            <div class="row">
+              <div class="col-lg-12">
+                <div id="product-owl" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="product">
+                      <div class="product__image">
+                        <img
+                          src="assets/images/products/product-1.webp"
+                          alt="shoes"
+                        />
+                      </div>
+                      <div class="product__desc">
+                        <h3>
+                          <a href="Product-single.html">Leather Mens Slipper</a>
+                        </h3>
+                        <span>$80.00</span>
+                        <del>$70.00</del>
+                      </div>
+                      <div class="product__icons">
+                        <div class="product__icons__wishlist">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:shopping-bag"
+                          ></span>
+                        </div>
+                        <div
+                          onclick="AddBasket(`item1`,`assets/images/products/product-1.webp`,`Leather Mens Slipper`,`$80.00`)"
+                          class="product__icons__addtocard"
+                        >
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:heart"
+                          ></span>
+                        </div>
+                        <div class="product__icons__quickview">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:eye"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product">
+                      <div class="product__image">
+                        <img
+                          src="assets/images/products/product-2.webp"
+                          alt="shoes"
+                        />
+                      </div>
+                      <div class="product__desc">
+                        <h3>
+                          <a href="Product-single.html">Leather Mens Slipper</a>
+                        </h3>
+                        <span>$80.00</span>
+                        <del>$70.00</del>
+                      </div>
+                      <div class="product__icons">
+                        <div class="product__icons__wishlist">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:shopping-bag"
+                          ></span>
+                        </div>
+                        <div
+                          onclick="AddBasket(`item1`,`assets/images/products/product-1.webp`,`Leather Mens Slipper`,`$80.00`)"
+                          class="product__icons__addtocard"
+                        >
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:heart"
+                          ></span>
+                        </div>
+                        <div class="product__icons__quickview">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:eye"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product">
+                      <div class="product__image">
+                        <img
+                          src="assets/images/products/product-3.webp"
+                          alt="shoes"
+                        />
+                      </div>
+                      <div class="product__desc">
+                        <h3>
+                          <a href="Product-single.html">Leather Mens Slipper</a>
+                        </h3>
+                        <span>$80.00</span>
+                        <del>$70.00</del>
+                      </div>
+                      <div class="product__icons">
+                        <div class="product__icons__wishlist">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:shopping-bag"
+                          ></span>
+                        </div>
+                        <div
+                          onclick="AddBasket(`item1`,`assets/images/products/product-1.webp`,`Leather Mens Slipper`,`$80.00`)"
+                          class="product__icons__addtocard"
+                        >
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:heart"
+                          ></span>
+                        </div>
+                        <div class="product__icons__quickview">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:eye"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product">
+                      <div class="product__image">
+                        <img
+                          src="assets/images/products/product-4.webp"
+                          alt="shoes"
+                        />
+                      </div>
+                      <div class="product__desc">
+                        <h3>
+                          <a href="Product-single.html">Leather Mens Slipper</a>
+                        </h3>
+                        <span>$80.00</span>
+                        <del>$70.00</del>
+                      </div>
+                      <div class="product__icons">
+                        <div class="product__icons__wishlist">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:shopping-bag"
+                          ></span>
+                        </div>
+                        <div
+                          onclick="AddBasket(`item1`,`assets/images/products/product-1.webp`,`Leather Mens Slipper`,`$80.00`)"
+                          class="product__icons__addtocard"
+                        >
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:heart"
+                          ></span>
+                        </div>
+                        <div class="product__icons__quickview">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:eye"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="product">
+                      <div class="product__image">
+                        <img
+                          src="assets/images/products/product-3.webp"
+                          alt="shoes"
+                        />
+                      </div>
+                      <div class="product__desc">
+                        <h3>
+                          <a href="Product-single.html">Leather Mens Slipper</a>
+                        </h3>
+                        <span>$80.00</span>
+                        <del>$70.00</del>
+                      </div>
+                      <div class="product__icons">
+                        <div class="product__icons__wishlist">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:shopping-bag"
+                          ></span>
+                        </div>
+                        <div
+                          onclick="AddBasket(`item1`,`assets/images/products/product-1.webp`,`Leather Mens Slipper`,`$80.00`)"
+                          class="product__icons__addtocard"
+                        >
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:heart"
+                          ></span>
+                        </div>
+                        <div class="product__icons__quickview">
+                          <span
+                            class="iconify"
+                            data-icon="akar-icons:eye"
+                          ></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -762,6 +1005,14 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"
+  ></script>
+
+  <!-- Owl carousel -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
   ></script>
 
   <!-- iconify -->

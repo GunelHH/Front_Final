@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "Card.scss",
+        "../utils/colors.scss",
+        "../utils/_mixins.scss"
+    ],
+    "names": [],
+    "file": "Card.css"
+}

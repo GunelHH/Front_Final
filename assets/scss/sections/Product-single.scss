@@ -1,6 +1,10 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
 
+.owl-stage-outer {
+  height: 450px;
+  margin: 30px 0;
+}
 .row-product {
   margin: 40px 0;
 }
@@ -28,7 +32,7 @@
     display: flex;
     &__product {
       width: 118px;
-      height: 114px;
+      height: 100%;
       border: 1px solid $border;
       margin-right: 10px;
       cursor: pointer;
@@ -88,7 +92,11 @@
     color: $nav-text-color;
   }
 }
+.zoom {
+  width: 100% !important;
+}
 .product-details__btn {
+  cursor: pointer;
   display: flex;
   font-size: 20px;
   &--leftbtn {
@@ -151,6 +159,8 @@
       }
     }
   }
+
+  // description
   &__description {
     border: 1px solid $border;
     padding: 14px 20px 20px;
@@ -188,6 +198,7 @@
 }
 // Information
 .product-change-pages__information {
+  display: none;
   border: 1px solid $border;
   padding: 34px;
   color: $a-color;
@@ -203,6 +214,7 @@
 
 // reviews
 .product-change-pages__reviews {
+  display: none;
   border: 1px solid $border;
   padding: 34px;
   color: $a-color;
@@ -285,5 +297,33 @@
     border: none;
     background-color: transparent;
     margin: 18px 0;
+  }
+}
+.product-carousel {
+  text-align: center;
+  &__title {
+    h3 {
+      font-weight: 600;
+      color: $navlinks;
+    }
+    p {
+      color: $a-color;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .product-change-pages {
+    ul {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .change-pages__description__product-information {
+    display: block;
+    .image {
+      width: 100%;
+      height: 380px;
+    }
   }
 }

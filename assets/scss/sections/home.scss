@@ -208,6 +208,18 @@
       right: 72px;
       background-color: white;
     }
+    &__quickview:hover {
+      background-color: $main;
+      color: $nav-text-color;
+    }
+    &__addtocard:hover {
+      background-color: $main;
+      color: $nav-text-color;
+    }
+    &__wishlist:hover {
+      background-color: $main;
+      color: $nav-text-color;
+    }
   }
 }
 .product:hover {

@@ -163,6 +163,15 @@
       left: 116px;
       right: 72px;
       background-color: white; }
+    .product .product__icons__quickview:hover {
+      background-color: #e3a51e;
+      color: white; }
+    .product .product__icons__addtocard:hover {
+      background-color: #e3a51e;
+      color: white; }
+    .product .product__icons__wishlist:hover {
+      background-color: #e3a51e;
+      color: white; }
 
 .product:hover {
   cursor: pointer;

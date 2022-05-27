@@ -366,3 +366,7 @@ nav {
       display: none; }
     .main-nav__mobile__icons {
       display: block; } }
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .main-nav__links {
+    font-size: 14px; } }

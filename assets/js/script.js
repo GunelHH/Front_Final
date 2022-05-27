@@ -33,7 +33,7 @@ $("#owlcard").owlCarousel({
       items: 1.3,
     },
     600: {
-      items: 1.3,
+      items: 2,
     },
     1000: {
       items: 4,
@@ -106,3 +106,4 @@ sticky.addEventListener("click", (e) => {
 
   e.preventDefault();
 });
+let ScrollHeader = document.querySelector(".main-nav");
