@@ -6,7 +6,7 @@
     position: absolute;
     top: 130px;
     left: 100px;
-    max-width: 400px;
+    width: 400px;
     height: 224px;
     color: white; }
     .main-carousel__content > p:first-child {
@@ -90,10 +90,10 @@
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   height: 390px;
-  width: 270px;
+  max-width: 270px;
   text-align: center;
   position: relative;
-  z-index: 1000; }
+  z-index: 1; }
   .product__image {
     overflow: hidden;
     transition: 0.2s ease-in all; }
@@ -185,8 +185,7 @@
     left: 180px; }
 
 #owlcard .owl-stage-outer {
-  height: 450px;
-  margin: 30px 0; }
+  height: 450px; }
 
 .scale {
   position: relative; }
@@ -354,22 +353,6 @@
   width: 100%;
   cursor: pointer; }
 
-.scroll-top {
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  top: -22px;
-  z-index: 12; }
-  .scroll-top .scroll {
-    width: 46px;
-    height: 46px;
-    background-color: #e3a51e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 12px; }
-
 @media (max-width: 991px) {
   .main-carousel__image {
     height: 350px; }
@@ -401,11 +384,9 @@
       position: relative;
       bottom: 64px;
       right: 22px; }
-  .scale__left {
-    height: 160px; }
-    .scale__left .desc {
-      position: relative;
-      bottom: 64px; }
+  .scale__left .desc {
+    position: relative;
+    bottom: 64px; }
   .bottom-item {
     margin-top: 20px; }
     .bottom-item .slide-item {
@@ -414,3 +395,37 @@
     margin-top: 20px; }
     .top-item .slide-item {
       display: block !important; } }
+
+.search {
+  position: relative;
+  z-index: 1200; }
+  .search__close-button {
+    position: absolute;
+    font-size: 28px;
+    padding: 6px 22px;
+    background-color: #fff;
+    right: 40px;
+    bottom: 150px; }
+    .search__close-button i {
+      color: #e3a51e; }
+  .search__input {
+    display: flex;
+    height: 60px; }
+    .search__input ::placeholder {
+      font-size: 16px; }
+    .search__input input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #e3a51e;
+      outline: none; }
+    .search__input > span {
+      width: 10%;
+      position: absolute;
+      right: 100px;
+      top: 20px;
+      transition: 0.2s ease-in all; }
+      .search__input > span i {
+        margin-right: 10px; }
+    .search__input span:hover {
+      color: #e3a51e;
+      cursor: pointer; }

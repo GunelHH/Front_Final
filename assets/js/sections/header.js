@@ -1,5 +1,4 @@
 let nav = document.querySelector(".main-nav");
-console.log(nav);
 document.addEventListener("scroll", function () {
   if (window.scrollY > 200) {
     nav.style.position = "fixed";

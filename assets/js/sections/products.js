@@ -64,3 +64,24 @@ selectButton.addEventListener("click", () => {
 });
 
 selectButton.toggle;
+
+// Change pages
+const leftButton = document.querySelector(".change-icons__icon--left");
+const rightButton = document.querySelector(".change-icons__icon--right");
+
+const cardsColumn = document.querySelector(".cards-first");
+const cardsList = document.querySelector(".cards-second");
+
+rightButton.addEventListener("click", () => {
+  cardsColumn.classList.remove("act");
+  cardsList.classList.add("act");
+  cardsList.classList.add("animationleft");
+  rightButton.classList.add("active");
+  leftButton.classList.remove("active");
+});
+leftButton.addEventListener("click", () => {
+  cardsList.classList.remove("act");
+  cardsColumn.classList.add("act");
+  leftButton.classList.add("active");
+  rightButton.classList.remove("active");
+});

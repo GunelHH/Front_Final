@@ -1,10 +1,12 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
 
-.owl-stage-outer {
-  height: 450px;
-  margin: 30px 0;
+.product-carousel__carousel {
+  .owl-stage-outer {
+    height: 450px;
+  }
 }
+
 .row-product {
   margin: 40px 0;
 }
@@ -131,6 +133,7 @@
     }
   }
 }
+
 .product-change-pages {
   ul {
     display: flex;
@@ -146,12 +149,13 @@
         color: $nav-text-color;
       }
     }
-    li.active {
+    .active {
       background-color: $nav-text-color;
       a {
         color: $a-color;
       }
     }
+
     li:hover {
       background-color: $nav-text-color;
       a {

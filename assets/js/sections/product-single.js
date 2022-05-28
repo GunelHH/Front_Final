@@ -33,18 +33,30 @@ const reviewsPage = document.querySelector(".product-change-pages__reviews");
 
 desc.addEventListener("click", (e) => {
   e.preventDefault();
+  desc.classList.add("active");
+  inform.classList.remove("active");
+  reviews.classList.remove("active");
+
   descPage.style.display = "block";
   informPage.style.display = "none";
   reviewsPage.style.display = "none";
 });
 inform.addEventListener("click", (e) => {
   e.preventDefault();
+  inform.classList.add("active");
+  desc.classList.remove("active");
+  reviews.classList.remove("active");
+
   descPage.style.display = "none";
   informPage.style.display = "block";
   reviewsPage.style.display = "none";
 });
 reviews.addEventListener("click", (e) => {
   e.preventDefault();
+  inform.classList.remove("active");
+  desc.classList.remove("active");
+  reviews.classList.add("active");
+
   descPage.style.display = "none";
   informPage.style.display = "none";
   reviewsPage.style.display = "block";

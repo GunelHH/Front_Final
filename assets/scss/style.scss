@@ -21,3 +21,25 @@ ul li {
 a {
   text-decoration: none;
 }
+body {
+  position: relative;
+}
+// sticky
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  z-index: 12;
+  right: 20px;
+
+  .scroll {
+    width: 46px;
+    height: 46px;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $nav-text-color;
+    border-radius: 12px;
+  }
+}

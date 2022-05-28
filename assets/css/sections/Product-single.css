@@ -1,6 +1,5 @@
-.owl-stage-outer {
-  height: 450px;
-  margin: 30px 0; }
+.product-carousel__carousel .owl-stage-outer {
+  height: 450px; }
 
 .row-product {
   margin: 40px 0; }
@@ -119,9 +118,9 @@
     transition: 0.2s ease-in all; }
     .product-change-pages ul li a {
       color: white; }
-  .product-change-pages ul li.active {
+  .product-change-pages ul .active {
     background-color: white; }
-    .product-change-pages ul li.active a {
+    .product-change-pages ul .active a {
       color: #666666; }
   .product-change-pages ul li:hover {
     background-color: white; }

@@ -104,6 +104,9 @@
     }
   }
 }
+.padding {
+  padding-top: 62px;
+}
 .advertising {
   > img {
     width: 100%;
@@ -112,7 +115,7 @@
 }
 
 .row-pad {
-  padding-top: 40px;
+  padding-top: 62px;
   flex-wrap: wrap-reverse;
 }
 
@@ -214,12 +217,83 @@ input[type="range"]::-moz-range-thumb {
 
 // Change pages
 
+.animationleft {
+  animation: leftanime 1s forwards;
+  @keyframes leftanime {
+    from {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+.animationscale {
+  animation: scaleanime 1s forwards;
+  @keyframes scaleanime {
+    from {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
 .change-icons {
-  &__icon {
+  // &__icon--right {
+  //   width: 46px;
+  //   height: 46px;
+  //   background-color: #9e9e9e;
+  //   margin-right: 10px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   color: $nav-text-color;
+  //   @include transition;
+  //   i {
+  //     font-size: 20px;
+  //   }
+  // }
+  // &__icon.active {
+  //   background-color: $main;
+  // }
+  // &__icon:hover {
+  //   background-color: $main;
+  //   cursor: pointer;
+  // }
+
+  .change-icons__icon--left {
     width: 46px;
     height: 46px;
     background-color: #9e9e9e;
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $nav-text-color;
+    @include transition;
+    margin-left: 29px;
+    margin-right: 6px;
+    i {
+      font-size: 20px;
+    }
+  }
+  .active {
+    background-color: $main;
+  }
+  // .change-icons__icon--left.active {
+  //   background-color: $main;
+  // }
+  .change-icons__icon--right.active {
+    background-color: $main;
+  }
+  .change-icons__icon--right {
+    width: 46px;
+    height: 46px;
+    background-color: #9e9e9e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,11 +303,14 @@ input[type="range"]::-moz-range-thumb {
       font-size: 20px;
     }
   }
-  &__icon.active {
+  .change-icons__icon--right:hover {
     background-color: $main;
+    color: $nav-text-color;
+    cursor: pointer;
   }
-  &__icon:hover {
+  .change-icons__icon--left:hover {
     background-color: $main;
+    color: $nav-text-color;
     cursor: pointer;
   }
 }
@@ -296,6 +373,9 @@ input[type="range"]::-moz-range-thumb {
 .card-product {
   .item-card {
     margin: 30px;
+    .product {
+      width: 400px;
+    }
   }
 }
 
@@ -312,11 +392,78 @@ input[type="range"]::-moz-range-thumb {
     justify-content: center;
   }
   .selection__select {
-    margin: 0 72px;
+    margin: 0 auto;
   }
   .selection__items {
     position: absolute;
     top: 70px;
     left: 72px;
   }
+}
+// card second
+.act {
+  transform: translateX(0px);
+  display: block !important ;
+}
+.cards-second {
+  margin-top: 30px;
+  display: none;
+  transform: translateX(50px);
+  @include transition;
+  .card-list {
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid $border;
+    padding: 12px;
+    &__image {
+      border: 1px solid $border;
+      margin-right: 20px;
+
+      overflow: hidden;
+      width: 550px;
+      height: 282px;
+      img {
+        width: 100%;
+        height: 100%;
+        @include transition;
+      }
+    }
+    &__desc {
+      color: $a-color;
+      p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      a:first-of-type:hover {
+        color: $main;
+      }
+      a {
+        color: $navlinks;
+        @include transition;
+      }
+      span {
+        color: $navlinks;
+      }
+      a:not(:first-child) {
+        padding: 14px;
+        background-color: #f6f6f6;
+        margin-right: 12px;
+        font-size: 20px;
+      }
+      a:not(:first-child):hover {
+        background-color: $main;
+        color: $nav-text-color;
+      }
+    }
+  }
+  .card-list:hover {
+    .card-list__image {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.cards-first {
+  display: none;
 }
