@@ -40,11 +40,40 @@
   <body>
     <header>
       <!-- basket -->
-      <div class="basket">
-        <div class="basket-top"></div>
-        <div class="basket-bottom">
-          <a href="Card.html"></a>
-          <a href="Card.html"></a>
+      <div class="basket-all">
+        <div class="basket container">
+          <div class="basket-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="basket__top">
+            <div class="basket__top__all">
+              <div class="basket__top__all__image">
+                <img src="assets/images/products/product-1.webp" alt="" />
+              </div>
+              <div class="basket__top__all__title">
+                <p>
+                  <a href="Products.html"
+                    >Flowers Bouquet Pink For All Flower Lovers</a
+                  >
+                </p>
+                <span>$80.00</span>
+              </div>
+              <div class="basket__top__all__price"></div>
+              <div class="basket__top__all__close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+          </div>
+          <div class="basket__bottom">
+            <div>
+              <a href="Card.html"
+                ><i class="fa-solid fa-cart-arrow-down"></i>VIEW CART</a
+              >
+            </div>
+            <div>
+              <a href="Card.html"><i class="fa-solid fa-share"></i>CHECKOUT</a>
+            </div>
+          </div>
         </div>
       </div>
       <!-- end basket -->
@@ -469,9 +498,9 @@
                           data-icon="akar-icons:shopping-bag"
                         ></span
                       ></a>
-                      <div>
-                        <span>5</span>
-                      </div>
+                      <!-- <div>
+                        <span></span>
+                      </div> -->
                     </li>
                   </ul>
                 </div>
@@ -492,13 +521,115 @@
       </nav>
     </header>
     <main>
-      <!-- scrol top -->
+      <!-- scroll top -->
       <div class="scroll-top">
         <div class="scroll">
           <i class="fa-solid fa-angle-up"></i>
         </div>
       </div>
       <!-- scroll end -->
+
+      <div class="container card-container">
+        <table>
+          <thead>
+            <tr>
+              <th>THUMBNAIL</th>
+              <th>PRODUCT</th>
+              <th>PRİCE</th>
+              <th>QUANTİTY</th>
+              <th>TOTAL</th>
+              <th>REMOVE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="assets/images/products/product-1.webp" alt="" />
+              </td>
+              <td>Leather Mens Slipper</td>
+              <td>$80.00</td>
+              <td>
+                <div class="count">
+                  <span>-</span><span>1</span><span>+</span>
+                </div>
+              </td>
+              <td>$80.00</td>
+              <td><i class="fa-regular fa-trash-can"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="assets/images/products/product-1.webp" alt="" />
+              </td>
+              <td>Leather Mens Slipper</td>
+              <td>$80.00</td>
+              <td>
+                <div class="count">
+                  <span>-</span><span>1</span><span>+</span>
+                </div>
+              </td>
+              <td>$80.00</td>
+              <td><i class="fa-regular fa-trash-can"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="assets/images/products/product-1.webp" alt="" />
+              </td>
+              <td>Leather Mens Slipper</td>
+              <td>$80.00</td>
+              <td>
+                <div class="count">
+                  <span>-</span><span>1</span><span>+</span>
+                </div>
+              </td>
+              <td>$80.00</td>
+              <td><i class="fa-regular fa-trash-can"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="assets/images/products/product-1.webp" alt="" />
+              </td>
+              <td>Leather Mens Slipper</td>
+              <td>$80.00</td>
+              <td>
+                <div class="count">
+                  <span>-</span><span>1</span><span>+</span>
+                </div>
+              </td>
+              <td>$80.00</td>
+              <td><i class="fa-regular fa-trash-can"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="assets/images/products/product-1.webp" alt="" />
+              </td>
+              <td>Leather Mens Slipper</td>
+              <td>$80.00</td>
+              <td>
+                <div class="count">
+                  <span>-</span><span>1</span><span>+</span>
+                </div>
+              </td>
+              <td>$80.00</td>
+              <td><i class="fa-regular fa-trash-can"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cart-bottom">
+          <div class="cart-bottom__input">
+            <form action="">
+              <input
+                type="text"
+                required
+                placeholder="Enter Your Coupon Code"
+              />
+              <button type="submit">APPLY COUPON</button>
+            </form>
+          </div>
+          <div class="cart-bottom__button">
+            <a href="Card.html">UPDATE CART</a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="top-footer">

@@ -1,2 +1,108 @@
 @import "../utils/colors.scss";
 @import "../utils/mixins";
+
+tbody {
+  border: 1px solid $border;
+  td {
+    border: 1px solid $border;
+    img {
+      width: 120px;
+    }
+    .count {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 50px;
+      border: 1px solid $border;
+      font-size: 20px;
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+thead {
+  background-color: $main;
+  color: $nav-text-color;
+  height: 50px;
+}
+table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.cart-bottom {
+  border: 1px solid $border;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+
+  &__input {
+    width: 55%;
+    input {
+      width: 70%;
+      border: none;
+      outline: none;
+      padding: 20px;
+      border: 1px solid $border;
+      @include transition;
+    }
+    input::placeholder {
+      font-size: 16px;
+    }
+    input:focus {
+      border: 1px solid $main;
+    }
+    button {
+      border: none;
+      background-color: $navlinks;
+      color: $main;
+      padding: 20px;
+      @include transition;
+      margin-left: 10px;
+    }
+    button:hover {
+      background-color: $main;
+      color: $nav-text-color;
+    }
+  }
+  &__button {
+    a {
+      padding: 20px;
+      background-color: $navlinks;
+      color: $main;
+      @include transition;
+    }
+    a:hover {
+      background-color: $main;
+      color: $nav-text-color;
+    }
+  }
+}
+.card-container {
+  overflow: scroll;
+}
+@media (max-width: 780px) {
+  .cart-bottom {
+    display: block;
+    &__input {
+      width: 100%;
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    &__button {
+      display: none;
+    }
+  }
+}

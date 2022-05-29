@@ -639,6 +639,91 @@ nav {
   .main-content__desc h5 {
     font-size: 20px; } }
 
+tbody {
+  border: 1px solid #e5e5e5; }
+  tbody td {
+    border: 1px solid #e5e5e5; }
+    tbody td img {
+      width: 120px; }
+    tbody td .count {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 50px;
+      border: 1px solid #e5e5e5;
+      font-size: 20px; }
+      tbody td .count span {
+        margin-right: 10px; }
+
+thead {
+  background-color: #e3a51e;
+  color: white;
+  height: 50px; }
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px; }
+
+.cart-bottom {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; }
+  .cart-bottom__input {
+    width: 55%; }
+    .cart-bottom__input input {
+      width: 70%;
+      border: none;
+      outline: none;
+      padding: 20px;
+      border: 1px solid #e5e5e5;
+      transition: 0.2s ease-in all; }
+    .cart-bottom__input input::placeholder {
+      font-size: 16px; }
+    .cart-bottom__input input:focus {
+      border: 1px solid #e3a51e; }
+    .cart-bottom__input button {
+      border: none;
+      background-color: #333333;
+      color: #e3a51e;
+      padding: 20px;
+      transition: 0.2s ease-in all;
+      margin-left: 10px; }
+    .cart-bottom__input button:hover {
+      background-color: #e3a51e;
+      color: white; }
+  .cart-bottom__button a {
+    padding: 20px;
+    background-color: #333333;
+    color: #e3a51e;
+    transition: 0.2s ease-in all; }
+  .cart-bottom__button a:hover {
+    background-color: #e3a51e;
+    color: white; }
+
+.card-container {
+  overflow: scroll; }
+
+@media (max-width: 780px) {
+  .cart-bottom {
+    display: block; }
+    .cart-bottom__input {
+      width: 100%; }
+      .cart-bottom__input input {
+        width: 100%;
+        margin-bottom: 10px; }
+      .cart-bottom__input button {
+        width: 100%;
+        margin: 0; }
+    .cart-bottom__button {
+      display: none; } }
+
 .contact-title h5 {
   color: #333333;
   font-size: 24px;
@@ -2070,3 +2155,92 @@ body {
       background-color: #e3a51e; }
       .product-quick-view .product-details__btn--rightbtn:hover a {
         color: white; }
+
+.basket-all {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6666668e;
+  position: fixed;
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-in all;
+  cursor: url(https://htmldemo.net/juan/juan/assets/img/icon/cancel.png), auto; }
+
+.basket {
+  cursor: default;
+  width: 340px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1200;
+  right: 0;
+  transition: 0.2s ease-in all;
+  transform: translateX(110%);
+  background-color: #fff; }
+  .basket-close {
+    transition: 0.2s ease-in all;
+    width: 46px;
+    height: 36px;
+    background-color: #e3a51e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    z-index: 1; }
+  .basket-close:hover {
+    transform: rotate(90deg); }
+  .basket__top {
+    margin-top: 20px;
+    height: 64%;
+    overflow: scroll; }
+    .basket__top__all {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative; }
+      .basket__top__all__close {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        color: #333333; }
+      .basket__top__all__image {
+        margin-bottom: 20px;
+        width: 100px;
+        height: 90px;
+        border: 1px solid #e5e5e5;
+        margin-right: 10px; }
+        .basket__top__all__image img {
+          width: 100%;
+          height: 100%; }
+      .basket__top__all__title {
+        font-size: 14px; }
+        .basket__top__all__title span {
+          color: #e3a51e; }
+        .basket__top__all__title a {
+          color: #333333;
+          transition: 0.2s ease-in all; }
+        .basket__top__all__title p:hover {
+          cursor: pointer; }
+          .basket__top__all__title p:hover a {
+            color: #e3a51e; }
+  .basket__bottom div {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 20px;
+    transition: 0.2s ease-in all; }
+  .basket__bottom a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .basket__bottom a i {
+      margin-right: 10px; }
+  .basket__bottom div:hover {
+    background-color: #e3a51e; }

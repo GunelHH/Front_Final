@@ -378,3 +378,112 @@ body {
     }
   }
 }
+
+// basket
+.basket-all {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6666668e;
+  position: fixed;
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+  cursor: url(https://htmldemo.net/juan/juan/assets/img/icon/cancel.png), auto;
+}
+.basket {
+  cursor: default;
+  width: 340px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1200;
+  right: 0;
+  @include transition;
+  transform: translateX(110%);
+  background-color: #fff;
+  &-close {
+    @include transition;
+    width: 46px;
+    height: 36px;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $nav-text-color;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    z-index: 1;
+  }
+  &-close:hover {
+    transform: rotate(90deg);
+  }
+  &__top {
+    margin-top: 20px;
+    height: 64%;
+    overflow: scroll;
+    &__all {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid $border;
+      position: relative;
+      &__close {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        color: $navlinks;
+      }
+      &__image {
+        margin-bottom: 20px;
+        width: 100px;
+        height: 90px;
+        border: 1px solid $border;
+        margin-right: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__title {
+        font-size: 14px;
+        span {
+          color: $main;
+        }
+        a {
+          color: $navlinks;
+          @include transition;
+        }
+        p:hover {
+          a {
+            color: $main;
+          }
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__bottom {
+    div {
+      margin-bottom: 20px;
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      background-color: $navlinks;
+      border-radius: 20px;
+      @include transition;
+    }
+    a {
+      color: $nav-text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        margin-right: 10px;
+      }
+    }
+    div:hover {
+      background-color: $main;
+    }
+  }
+}

@@ -138,6 +138,26 @@
         <!-- quick view end -->
     
       <header>
+             <!-- basket -->
+      <div class="basket-all">
+        <div class="basket container">
+          <div class="basket-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="basket__top"></div>
+          <div class="basket__bottom">
+            <div>
+              <a href="Card.html"
+                ><i class="fa-solid fa-cart-arrow-down"></i>VIEW CART</a
+              >
+            </div>
+            <div>
+              <a href="Card.html"><i class="fa-solid fa-share"></i>CHECKOUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end basket -->
           <!--search -->
             <div class="main-search-m">
               <div class="main-search">
@@ -560,7 +580,7 @@
                         ></span
                       ></a>
                       <div>
-                        <span>5</span>
+                        <span id="count"></span>
                       </div>
                     </li>
                   </ul>
@@ -728,13 +748,13 @@
                      <del>$70.00</del>
                      </div>
                      <div class="product__icons">
-                     <div class="product__icons__wishlist">
+                     <div  onclick="AddBasket(`item1`,`assets/images/products/product-1.webp`,`Leather Mens Slipper`,`$80.00`)" class="product__icons__wishlist">
                       <span
                         class="iconify"
                         data-icon="akar-icons:shopping-bag"
                       ></span>
                     </div>
-                    <div onclick="AddBasket(`item1`,`assets/images/products/product-1.webp`,`Leather Mens Slipper`,`$80.00`)" class="product__icons__addtocard">
+                    <div class="product__icons__addtocard">
                       <span class="iconify" data-icon="akar-icons:heart"></span>
                     </div>
                     <div class="product__icons__quickview">
@@ -765,7 +785,7 @@
                     <del>$70.00</del>
                   </div>
                   <div class="product__icons">
-                    <div class="product__icons__wishlist">
+                    <div onclick="AddBasket(`item2`,`assets/images/products/product-2.webp`,`Leather Mens Slipper`,`$80.00`)" class="product__icons__wishlist">
                       <span
                         class="iconify"
                         data-icon="akar-icons:shopping-bag"
@@ -802,7 +822,7 @@
                     <del>$70.00</del>
                   </div>
                   <div class="product__icons">
-                    <div class="product__icons__wishlist">
+                    <div onclick="AddBasket(`item3`,`assets/images/products/product-3.webp`,`Leather Mens Slipper`,`$80.00`)" class="product__icons__wishlist">
                       <span
                         class="iconify"
                         data-icon="akar-icons:shopping-bag"
@@ -839,7 +859,7 @@
                     <del>$70.00</del>
                   </div>
                   <div class="product__icons">
-                    <div class="product__icons__wishlist">
+                    <div onclick="AddBasket(`item4`,`assets/images/products/product-4.webp`,`Leather Mens Slipper`,`$80.00`)" class="product__icons__wishlist">
                       <span
                         class="iconify"
                         data-icon="akar-icons:shopping-bag"
@@ -1300,4 +1320,5 @@
   <script src="assets/js/sections/fixed.js"></script>
   <script src="assets/js/sections/home.js"></script>
   <script src="assets/js/sections/responsive-nav.js"></script>
+  <script src="assets/js/sections/quick-view.js"></script>
 </html>

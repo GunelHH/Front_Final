@@ -39,17 +39,20 @@ searchClose.addEventListener("click", () => {
   searchPage.style.display = "none";
 });
 
-// quick view
+// basket
+const Bag = document.querySelector("#bag");
+const bagPageall = document.querySelector(".basket-all");
+const bagPage = document.querySelector(".basket");
+const bagClose = document.querySelector(".basket-close");
 
-const closeQuick = document.querySelector(".x-icon");
-const quickViewIcons = document.querySelectorAll(".product__icons__quickview");
-const quickView = document.querySelector(".product-quick-view ");
-quickViewIcons.forEach((element) => {
-  element.addEventListener("click", (e) => {
-    e.preventDefault();
-    quickView.style.display = "block";
-  });
+Bag.addEventListener("click", (e) => {
+  e.preventDefault();
+  bagPageall.style.opacity = "1";
+  bagPageall.style.visibility = "visible";
+  bagPage.style.transform = "translate(0)";
 });
-closeQuick.addEventListener("click", () => {
-  quickView.style.display = "none";
+bagClose.addEventListener("click", () => {
+  bagPageall.style.opacity = 0;
+  bagPageall.style.visibility = "hidden";
+  bagPage.style.transform = "translate(110%)";
 });
