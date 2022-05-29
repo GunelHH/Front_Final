@@ -184,8 +184,10 @@
   .product:hover .product__icons__quickview {
     left: 180px; }
 
-#owlcard .owl-stage-outer {
-  height: 450px; }
+#owlcard {
+  margin: 20px; }
+  #owlcard .owl-stage-outer {
+    height: 450px; }
 
 .scale {
   position: relative; }
@@ -395,37 +397,3 @@
     margin-top: 20px; }
     .top-item .slide-item {
       display: block !important; } }
-
-.search {
-  position: relative;
-  z-index: 1200; }
-  .search__close-button {
-    position: absolute;
-    font-size: 28px;
-    padding: 6px 22px;
-    background-color: #fff;
-    right: 40px;
-    bottom: 150px; }
-    .search__close-button i {
-      color: #e3a51e; }
-  .search__input {
-    display: flex;
-    height: 60px; }
-    .search__input ::placeholder {
-      font-size: 16px; }
-    .search__input input {
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid #e3a51e;
-      outline: none; }
-    .search__input > span {
-      width: 10%;
-      position: absolute;
-      right: 100px;
-      top: 20px;
-      transition: 0.2s ease-in all; }
-      .search__input > span i {
-        margin-right: 10px; }
-    .search__input span:hover {
-      color: #e3a51e;
-      cursor: pointer; }

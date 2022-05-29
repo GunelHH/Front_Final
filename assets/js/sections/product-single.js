@@ -81,8 +81,6 @@ plus.addEventListener("click", () => {
 
 const mainImage = document.querySelector(".zoom");
 
-console.log(mainImage.firstChild.nextSibling);
-
 const images = document.querySelectorAll(
   ".products-details__other-products__product"
 );

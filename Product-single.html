@@ -56,7 +56,162 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- quick view -->
+    <!-- <div class="product-quick-view">
+      <div class="product-quick-view-all">
+        <div class="x-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="product-quick-view-image">
+          <div class="products-details">
+            <figure class="zoom" onmousemove="zoom(event)">
+              <img
+                src="https://htmldemo.net/juan/juan/assets/img/product/product-details-img1.jpg"
+              />
+            </figure>
+            <div class="products-details__other-products">
+              <div class="products-details__other-products__product">
+                <img
+                  src="assets/images/products/product-7.webp"
+                  alt="Product-Image"
+                />
+              </div>
+              <div class="products-details__other-products__product">
+                <img
+                  src="assets/images/products/product-8.webp"
+                  alt="Product-Image"
+                />
+              </div>
+              <div class="products-details__other-products__product">
+                <img
+                  src="assets/images/products/product-6.webp"
+                  alt="Product-Image"
+                />
+              </div>
+              <div class="products-details__other-products__product">
+                <img
+                  src="assets/images/products/product-12.webp"
+                  alt="Product-Image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-quick-view-desc">
+          <div class="products-details__title">
+            <h5>Primitive Mens Premium Shoes</h5>
+          </div>
+          <div class="products-details__desc">
+            <p>1 Review(s)</p>
+            <span>$70.00 <del>$80.00</del></span>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. Phasellus id nisi quis justo tempus
+              mollis sed et dui. In hac habitasse platea dictumst. Suspendisse
+              ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat
+              nisi ut mauris efficitur lacinia. `
+            </p>
+            <div class="product-details__btn">
+              <div class="product-details__btn--leftbtn">
+                <span id="minus">-</span>
+                <input id="input" type="text" value="1" />
+                <span id="plus">+</span>
+              </div>
+              <div class="product-details__btn--rightbtn">
+                <a href="Card.html">ADD TO CART</a>
+              </div>
+            </div>
+            <p>Availability: <span>In Stock</span></p>
+            <div class="product-details__share-icons">
+              <h6>Share:</h6>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- quick view end -->
     <header>
+      <!--search -->
+      <div class="main-search-m">
+        <div class="main-search">
+          <div class="main-search__close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="container">
+            <div class="main-search__input">
+              <input type="text" placeholder="Search entire storage here..." />
+              <span><i class="fa-solid fa-magnifying-glass"></i>Search</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search end -->
+      <!-- nav responsive -->
+      <div class="nav-responsive">
+        <div class="nav-responsive__top">
+          <div class="nav-responsive__search">
+            <input type="text" placeholder="Search Here..." />
+          </div>
+          <div class="nav-responsive__icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="nav-responsive__links">
+            <ul class="p-0">
+              <li>
+                <a href="index.html">Home</a>
+                <div class="x-elements">
+                  <div class="x-left"></div>
+                  <div class="x-right"></div>
+                </div>
+                <ul id="xhome" class="p-0">
+                  <li>Home version 01</li>
+                  <li>Home version 02</li>
+                </ul>
+              </li>
+              <li>
+                <a href="Products.html">Shop</a>
+                <i class="fa-solid fa-plus"></i>
+              </li>
+              <li>
+                <a href="Blogs.html">Blog</a> <i class="fa-solid fa-plus"></i>
+              </li>
+              <li><a href="Contact-us.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-responsive__bottom">
+          <ul class="p-0">
+            <li>
+              Currency <i class="fa-solid fa-angle-down"></i>
+              <ul>
+                <li>$ USD</li>
+                <li>€ EURO</li>
+              </ul>
+            </li>
+            <li>My Account <i class="fa-solid fa-angle-down"></i></li>
+          </ul>
+          <div class="nav-responsive__bottom__contact">
+            <p><i class="fa-solid fa-mobile-screen-button"></i>0123486758</p>
+            <p><i class="fa-regular fa-envelope"></i>info@yourdomain.com</p>
+            <ul class="p-0">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-pinterest"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-close">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+      <!-- nav res end -->
       <nav class="nav-cus">
         <div class="top-nav">
           <div class="container">
@@ -1033,4 +1188,5 @@
   <script src="assets/js/sections/header.js"></script>
   <script src="assets/js/sections/product-single.js"></script>
   <script src="assets/js/sections/fixed.js"></script>
+  <script src="assets/js/sections/responsive-nav.js"></script>
 </html>

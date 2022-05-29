@@ -239,6 +239,7 @@
   }
 }
 #owlcard {
+  margin: 20px;
   .owl-stage-outer {
     height: 450px;
   }
@@ -563,49 +564,3 @@
 //   .product__icons__wish {
 //   }
 // }
-
-// search
-.search {
-  position: relative;
-  z-index: 1200;
-  // color: $nav-text-color;
-  &__close-button {
-    position: absolute;
-    font-size: 28px;
-    padding: 6px 22px;
-    background-color: #fff;
-    right: 40px;
-    bottom: 150px;
-    i {
-      color: $main;
-    }
-  }
-  &__input {
-    display: flex;
-    height: 60px;
-    ::placeholder {
-      // color: $nav-text-color;
-      font-size: 16px;
-    }
-    input {
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid $main;
-      outline: none;
-    }
-    > span {
-      width: 10%;
-      position: absolute;
-      right: 100px;
-      top: 20px;
-      @include transition;
-      i {
-        margin-right: 10px;
-      }
-    }
-    span:hover {
-      color: $main;
-      cursor: pointer;
-    }
-  }
-}
