@@ -6,7 +6,8 @@ const quickView = document.querySelector(".product-quick-view ");
 quickViewIcons.forEach((element) => {
   element.addEventListener("click", (e) => {
     e.preventDefault();
-    quickView.style.display = "block";
+    quickView.style.opacity = 1;
+    quickView.style.visibility = "visible";
   });
 });
 closeQuick.addEventListener("click", (e) => {

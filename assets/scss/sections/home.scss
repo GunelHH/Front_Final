@@ -561,7 +561,22 @@
     }
   }
 }
-// @media (max-width: 767px) {
-//   .product__icons__wish {
-//   }
-// }
+@media (min-width: 320px) and (max-width: 340px) {
+  .product__icons {
+    &__wishlist {
+      position: absolute;
+      top: 76px !important;
+      left: 100px !important;
+    }
+    &__addtocard {
+      position: absolute;
+      top: 76px !important;
+      left: 100px !important;
+    }
+    &__quickview {
+      position: absolute;
+      top: 76px !important;
+      left: 100px !important;
+    }
+  }
+}

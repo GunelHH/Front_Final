@@ -24,6 +24,7 @@ a {
 body {
   position: relative;
 }
+
 // sticky
 
 .scroll-top {
@@ -227,26 +228,28 @@ body {
 // quick view
 
 .product-quick-view {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 1200;
   background-color: #6666664e;
   .product-quick-view-all {
+    padding: 12px;
     background-color: #fff;
     display: flex;
     width: 800px;
     height: 440px;
     border: 1px solid $border;
-    position: relative;
-    top: 200px;
-    left: 280px;
   }
   .x-icon {
     position: relative;
     top: 4px;
-    left: 780px;
+    left: 750px;
     z-index: 1;
   }
   .product-quick-view-desc {

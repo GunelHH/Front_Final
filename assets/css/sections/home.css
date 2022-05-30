@@ -397,3 +397,17 @@
     margin-top: 20px; }
     .top-item .slide-item {
       display: block !important; } }
+
+@media (min-width: 320px) and (max-width: 340px) {
+  .product__icons__wishlist {
+    position: absolute;
+    top: 76px !important;
+    left: 100px !important; }
+  .product__icons__addtocard {
+    position: absolute;
+    top: 76px !important;
+    left: 100px !important; }
+  .product__icons__quickview {
+    position: absolute;
+    top: 76px !important;
+    left: 100px !important; } }

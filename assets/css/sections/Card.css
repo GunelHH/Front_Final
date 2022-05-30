@@ -4,7 +4,7 @@ tbody {
     border: 1px solid #e5e5e5; }
     tbody td img {
       width: 120px; }
-    tbody td .count {
+    tbody td .increase {
       margin: 0 auto;
       display: flex;
       justify-content: center;
@@ -13,7 +13,7 @@ tbody {
       height: 50px;
       border: 1px solid #e5e5e5;
       font-size: 20px; }
-      tbody td .count span {
+      tbody td .increase span {
         margin-right: 10px; }
 
 thead {

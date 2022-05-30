@@ -645,7 +645,7 @@ tbody {
     border: 1px solid #e5e5e5; }
     tbody td img {
       width: 120px; }
-    tbody td .count {
+    tbody td .increase {
       margin: 0 auto;
       display: flex;
       justify-content: center;
@@ -654,7 +654,7 @@ tbody {
       height: 50px;
       border: 1px solid #e5e5e5;
       font-size: 20px; }
-      tbody td .count span {
+      tbody td .increase span {
         margin-right: 10px; }
 
 thead {
@@ -1233,6 +1233,20 @@ table {
     margin-top: 20px; }
     .top-item .slide-item {
       display: block !important; } }
+
+@media (min-width: 320px) and (max-width: 340px) {
+  .product__icons__wishlist {
+    position: absolute;
+    top: 76px !important;
+    left: 100px !important; }
+  .product__icons__addtocard {
+    position: absolute;
+    top: 76px !important;
+    left: 100px !important; }
+  .product__icons__quickview {
+    position: absolute;
+    top: 76px !important;
+    left: 100px !important; } }
 
 .product-carousel__carousel .owl-stage-outer {
   height: 450px; }
@@ -2039,25 +2053,27 @@ body {
       cursor: pointer; }
 
 .product-quick-view {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 1200;
   background-color: #6666664e; }
   .product-quick-view .product-quick-view-all {
+    padding: 12px;
     background-color: #fff;
     display: flex;
     width: 800px;
     height: 440px;
-    border: 1px solid #e5e5e5;
-    position: relative;
-    top: 200px;
-    left: 280px; }
+    border: 1px solid #e5e5e5; }
   .product-quick-view .x-icon {
     position: relative;
     top: 4px;
-    left: 780px;
+    left: 750px;
     z-index: 1; }
   .product-quick-view .product-quick-view-desc {
     margin-left: 10px; }
